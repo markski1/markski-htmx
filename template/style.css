@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Nunito+Sans:opsz@6..12&display=swap');
+
+body {
+    background-color: #222229;
+    color: #EEEEEE;
+    line-height: 1.3;
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+header {
+    width: 48rem;
+    max-width: 95%;
+    margin: auto;
+    top: 0;
+}
+
+main {
+    width: 48rem;
+    max-width: 95%;
+    margin: auto;
+}
+
+footer {
+    width: 40rem;
+    max-width: 60%;
+    margin: 150px auto auto;
+    top: 0;
+    border-top: 1px solid #333333;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #999999;
+    margin: 1.25rem auto;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+.menubtn {
+    font-family: 'IBM Plex Mono', monospace;
+    border: 0;
+    border-radius: 0;
+    padding: 6px 10px;
+    color: #DDDDDD;
+    background-color: #505070;
+    user-select: none;
+}
+
+.menubtn:hover {
+    background-color: #7060AA;
+}
+
+.menubtn:active {
+    background-color: #8050FF;
+}
+
+.field_input {
+    border: 1px black solid;
+    padding: 0.5rem;
+    width: 12rem;
+    max-width: 95%;
+    margin-bottom: 0.5rem;
+    color: #DDDDDD;
+    background-color: #111111;
+}
+
+.text_input {
+    padding: .5rem;
+    border: 1px black solid;
+    width: 40rem;
+    max-width: 95%;
+    height: 15rem;
+    margin: auto auto 2rem;
+    color: #DDDDDD;
+    background-color: #111111;
+}
+
+.button {
+    border: 1px black solid;
+    border-radius: 0;
+    padding: .75rem 1.2rem;
+    color: #DDDDDD;
+    background-color: #111111;
+}
