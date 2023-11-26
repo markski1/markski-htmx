@@ -2,7 +2,6 @@
 
 function render_template($title, $content): void
 {
-    $menu = file_get_contents("template/menu.html");
     // convert "sitelinks" to proper htmx urls
 
     $sitelink_pattern = '/<sitelink to="([^"]*)">([^<]*)<\/sitelink>/';
@@ -13,9 +12,9 @@ function render_template($title, $content): void
             $destination_url = $matches[1];
             $destination_text = $matches[2];
 
-            return '<a href="' . $destination_url . '" hx-get="' . $destination_url . '" hx-push-url="true" hx-target="main">' . $destination_text . '</a>';
+            return "<a href='{$destination_url}' hx-get='{$destination_url}' hx-push-url='true' hx-target='main'>{$destination_text}</a>";
         },
-        $menu.$content
+        $content
     );
 
     if (isset($_SERVER['HTTP_HX_REQUEST'])) {
