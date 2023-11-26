@@ -6,7 +6,7 @@ $content = <<<EOD
     <h3>extras</h3>
     <hr>
     <p>this page largely contains things i can't imagine anyone caring about.</p>
-    <p>it's my website, so might as well give them a space anyways. is this narcisism?</p>
+    <p>it's my website, so might as well give them a space anyways. is this narcissism?</p>
     <div>
         <h4>miscelaneous waffling</h4>
         <ul>
@@ -39,4 +39,4 @@ $content = <<<EOD
     
 EOD;
 
-render_template("home", $content);
+render_template("extas", $content);

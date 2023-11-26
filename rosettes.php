@@ -99,4 +99,4 @@ $content = <<<EOD
     
 EOD;
 
-render_template("home", $content);
+render_template("rosettes", $content);
