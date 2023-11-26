@@ -4,7 +4,7 @@ function render_template($title, $content): void
 {
     // convert "sitelinks" to proper htmx urls
 
-    $sitelink_pattern = '/<sitelink to="([^"]*)">([^<]*)<\/sitelink>/';
+    $sitelink_pattern = '/<sitelink to="([^"]*)">([^<]+)<\/sitelink>/';
 
     $content = preg_replace_callback(
         $sitelink_pattern,

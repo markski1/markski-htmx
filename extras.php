@@ -13,7 +13,7 @@ $content = <<<EOD
              <li>most people's perception of php is 10+ years out of date.</li>
              <li>in my opinion, a bad language makes you make assumptions. requiring you to be explicit isn't inherently "demanding attention to the irrelevant"</li>
              <li>bad software is unethical.</li>
-             <li>seriously. imagine the amount of unnecesary power usage in the world, across hundreds of millions of computers, caused by electron apps that could be native, or by javascript running in servers.</li>
+             <li>seriously. imagine the amount of unnecesary power usage in the world, across hundreds of millions of computers, caused by electron apps that could be native.</li>
              <li>i hate the joke about how programmers "only copy things from stack overflow". if you are a programmer, and you can relate to that sentence, please improve. don't be replaceable.</li>
         </ul>
     </div>

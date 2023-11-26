@@ -15,6 +15,7 @@ header {
 
 main {
     max-width: 800px;
+    margin-bottom: 70px;
 }
 
 hr {
@@ -51,7 +52,7 @@ ul li::before {
 }
 
 li {
-    padding-top: .25rem;
+    padding-top: .33rem;
 }
 
 .menubtn {
@@ -71,6 +72,23 @@ li {
 
 .menubtn:active {
     background-color: #8050FF;
+}
+
+.brighter {
+    background-color: #7050FF;
+    color: white;
+}
+
+.no-decor {
+    text-decoration: none;
+}
+
+.accent {
+    color: #AA70FF;
+}
+
+.margin {
+    margin-top: 2rem;
 }
 
 .field_input {
