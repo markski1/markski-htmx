@@ -1,35 +1,50 @@
 <?php
 
-function render_template($title, $content): void
-{
-    // convert "sitelinks" to proper htmx urls
 
-    $sitelink_pattern = '/<sitelink to="([^"]*)">([^<]+)<\/sitelink>/';
+class Template {
+    private string $title;
+    private string $content;
+    private string $description;
 
-    $content = preg_replace_callback(
-        $sitelink_pattern,
-        function ($matches) {
-            $destination_url = $matches[1];
-            $destination_text = $matches[2];
-
-            return "<a href='{$destination_url}' hx-get='{$destination_url}' hx-push-url='true' hx-target='main'>{$destination_text}</a>";
-        },
-        $content
-    );
-
-    if (isset($_SERVER['HTTP_HX_REQUEST'])) {
-        echo $content;
-        echo "<script>
-                document.title = '{$title} - markski';
-            </script>";
-        exit;
+    public function __construct($title) {
+        $this->title = $title;
     }
 
-    $template = file_get_contents("template/layout.html");
+    function set_content($content) {
+        $sitelink_pattern = '/<sitelink to="([^"]*)">([^<]+)<\/sitelink>/';
 
-    // insert title and content into the template
-    $site = str_replace("<!-- %%% SITE_TITLE %%% -->", $title, $template);
-    $site = str_replace("<!-- %%% SITE_CONTENT %%% -->", $content, $site);
+        $this->content = preg_replace_callback(
+            $sitelink_pattern,
+            function ($matches) {
+                $destination_url = $matches[1];
+                $destination_text = $matches[2];
 
-    echo $site;
+                return "<a href='{$destination_url}' hx-get='{$destination_url}' hx-push-url='true' hx-target='main'>{$destination_text}</a>";
+            },
+            $content
+        );
+    }
+
+    function set_description($description) {
+        $this->description = $description;
+    }
+
+    function render() {
+        if (isset($_SERVER['HTTP_HX_REQUEST'])) {
+            echo $this->content;
+            echo "<script>
+                      document.title = '{$this->title} - markski';
+                  </script>";
+            exit;
+        }
+
+        $site = file_get_contents("template/layout.html");
+
+        // insert title and content into the template
+        $site = str_replace("<!-- %%% SITE_TITLE %%% -->", $this->title, $site);
+        $site = str_replace("<!-- %%% SITE_DESCRIPTION %%% -->", $this->description, $site);
+        $site = str_replace("<!-- %%% SITE_CONTENT %%% -->", $this->content, $site);
+
+        echo $site;
+    }
 }

@@ -1,7 +1,9 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>calculando argentina</h3>
     <hr>
@@ -17,4 +19,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("calculando", $content);
+$site = new Template("calculando");
+$site->set_description("open source progressive web application (pwa), providing common calculations relevant to the argentine republic.");
+$site->set_content($content);
+$site->render();

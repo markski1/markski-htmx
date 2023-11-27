@@ -1,7 +1,9 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>about</h3>
     <p>i am a computer science student from la plata, argentina.</br>
@@ -29,4 +31,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("home", $content);
+$site = new Template("home");
+$site->set_description("markski's personal website.");
+$site->set_content($content);
+$site->render();

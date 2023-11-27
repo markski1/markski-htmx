@@ -1,7 +1,8 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
 
     
     <h3>libraries</h3>
@@ -38,4 +39,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("libraries", $content);
+$site = new Template("libraries");
+$site->set_description("miscelaneous libraries developed by me.");
+$site->set_content($content);
+$site->render();

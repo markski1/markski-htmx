@@ -1,7 +1,9 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>wttk</h3>
     <hr>
@@ -22,4 +24,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("wttk", $content);
+$site = new Template("wttk");
+$site->set_description("wttk is a lightweight, free and open source windows tweaking tool");
+$site->set_content($content);
+$site->render();

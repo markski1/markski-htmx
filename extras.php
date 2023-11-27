@@ -1,7 +1,9 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>extras</h3>
     <hr>
@@ -39,4 +41,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("extas", $content);
+$site = new Template("extas");
+$site->set_description("miscelaneous junk.");
+$site->set_content($content);
+$site->render();

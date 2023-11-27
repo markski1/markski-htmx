@@ -1,7 +1,9 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>four. oh. four.</h3>
     <p>i don't have whatever it is you want.</a>
@@ -10,4 +12,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("404", $content);
+$site = new Template("404");
+$site->set_description("site not found.");
+$site->set_content($content);
+$site->render();

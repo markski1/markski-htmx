@@ -1,7 +1,9 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>samonitor</h3>
     <hr>
@@ -16,4 +18,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("samonitor", $content);
+$site = new Template("samonitor");
+$site->set_description("free, open source and public server browser, api and masterlist provider for sa-mp and open.mp.");
+$site->set_content($content);
+$site->render();

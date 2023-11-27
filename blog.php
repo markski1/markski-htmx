@@ -1,7 +1,9 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>blog</h3>
     <hr>
@@ -14,7 +16,7 @@ $content = <<<EOD
             My latest iteration of it was in early 2022, when I decided to port it to Next.JS, just to be one of the React cool kids with the build step and the deployments and whatever. I was also focused in frontend development and wanted to present myself as such.
         </p>
         <p>
-            Finding myself delusioned with the state of modern frontend development, and given that that my current professional position is largely on the server side, I have decided to rewrite my personal site in a much simpler stack. PHP for the server logic, and HTMX for presentation.
+            Finding myself delusioned with the state of modern frontend development, and given that my current professional position is largely on the server side, I have decided to rewrite my personal site in a much simpler stack. PHP for the server logic, and HTMX for presentation.
         </p>
         <p>
             I'll port over the old blog posts and other "missing" stuff eventually.
@@ -24,4 +26,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("blog", $content);
+$site = new Template("blog");
+$site->set_description("markski's blog.");
+$site->set_content($content);
+$site->render();

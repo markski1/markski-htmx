@@ -1,7 +1,8 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
 
     
     <h3>software & services</h3>
@@ -30,4 +31,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("software & services", $content);
+$site = new Template("software & services");
+$site->set_description("rosettes is a simple, free, open source discord bot");
+$site->set_content($content);
+$site->render();

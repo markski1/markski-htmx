@@ -1,12 +1,15 @@
 <?php
 include 'template/engine.php';
 
-$content = <<<EOD
+$content = /** @lang HTML */
+    <<<EOD
+
 
     <h3>rosettes</h3>
     <hr>
     <div>
         <h4>about</h4>
+        <img alt="rosettes logo" src="/assets/images/rosettes.png" width="20%" style="float: right"/>
         <p>rosettes is a simple, free and open source discord bot.</p>
         <p>it's objectives are:</p>
         <ul>
@@ -99,4 +102,7 @@ $content = <<<EOD
     
 EOD;
 
-render_template("rosettes", $content);
+$site = new Template("rosettes");
+$site->set_description("rosettes is a simple, free and open source discord bot.");
+$site->set_content($content);
+$site->render();
