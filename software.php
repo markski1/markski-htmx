@@ -5,7 +5,7 @@ $content = /** @lang HTML */
     <<<EOD
 
     
-    <h3>software & services</h3>
+    <h3>software & stuff</h3>
     <hr>
     <div>
         <h4>Rosettes</h4>
@@ -27,6 +27,8 @@ $content = /** @lang HTML */
         web app with calculators relevant to argentina.<br />
         <sitelink to="calculando">learn more</sitelink> - <a href="https://github.com/markski1/Calculadoras" target="_blank">github</a>
     </div>
+    
+    <iframe src="https://status.markski.ar/badge?theme=dark" style="border: 0; width: 250px; height: 32px; margin-top: 2rem;"></iframe>
     
     
 EOD;

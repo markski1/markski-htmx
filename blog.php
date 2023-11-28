@@ -8,19 +8,29 @@ $content = /** @lang HTML */
     <h3>blog</h3>
     <hr>
     <div>
-        <h4>Fresh start</h4>
-        <p>
-            I've always enjoyed running a personal website - having a centralized place to display my projects and stuff. I have run it since I started coding, at around 14 or so. Never did analytics on it, for all I know, no one has ever seen it. But I enjoy it, so, here we are.
-        </p>
-        <p>
-            My latest iteration of it was in early 2022, when I decided to port it to Next.JS, just to be one of the React cool kids with the build step and the deployments and whatever. I was also focused in frontend development and wanted to present myself as such.
-        </p>
-        <p>
-            Finding myself delusioned with the state of modern frontend development, and given that my current professional position is largely on the server side, I have decided to rewrite my personal site in a much simpler stack. PHP for the server logic, and HTMX for presentation.
-        </p>
-        <p>
-            I'll port over the old blog posts and other "missing" stuff eventually.
-        </p>
+        <h3>Fresh start</h3>
+        <p>vague reflecting on the new personal website.</p>
+        <p><sitelink to="/blog/fresh-start">view post</sitelink></p>
+    </div>
+    <div>
+        <h3>monitoring your projects' uptime is easier than you think</h3>
+        <p>once you're running a few hobby projects, you'll want to be the first to know when they fall.</p>
+        <p><sitelink to="/blog/monitoring-project-uptime">view post</sitelink></p>
+    </div>
+    <div>
+        <h3>fix linux failing to find your headset microphone</h3>
+        <p>Audio issues on linux are rare nowadays. but when they show up, they are non-trivial.</p>
+        <p><sitelink to="/blog/linux-fix-headset-mic">view post</sitelink></p>
+    </div>
+    <div>
+        <h3>deploying a tes3mp server on a vps</h3>
+        <p>using a linux vps to easily host a morrowind multiplayer server.</p>
+        <p><sitelink to="/blog/tes3mp-server-linux">view post</sitelink></p>
+    </div>
+    <div>
+        <h3>hosting your own sharex screenshots with psxu</h3>
+        <p>using a webserver as a personal content host to easily use with tools such as sharex.</p>
+        <p><sitelink to="/blog/sharex-self-host-with-psxu">view post</sitelink></p>
     </div>
 
     

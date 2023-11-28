@@ -26,6 +26,13 @@ hr {
     max-width: 20rem;
 }
 
+code, pre {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5rem;
+    background: #000000;
+}
+
 h3, h4 {
     margin-top: 2rem;
 }

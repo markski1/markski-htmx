@@ -9,7 +9,7 @@ $content = /** @lang HTML */
     <hr>
     <div>
         <h4>about</h4>
-        <img alt="rosettes logo" src="/assets/images/rosettes.png" width="20%" style="float: right"/>
+        <img alt="rosettes logo" src="/images/rosettes.png" width="20%" style="float: right"/>
         <p>rosettes is a simple, free and open source discord bot.</p>
         <p>it's objectives are:</p>
         <ul>

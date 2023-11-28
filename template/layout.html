@@ -8,14 +8,14 @@
     <meta property="og:description" content="<!-- %%% SITE_DESCRIPTION %%% -->" />
 
     <style>
-        @import "template/style.css";
+        @import "/template/style.css";
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 </head>
 <body>
 <header>
-    <pre style="background: 0; color: #9955FF; font-size: 1rem; user-select: none;">
+    <pre style="padding: 0; background: 0; color: #9955FF; font-size: 1rem; user-select: none;">
                       _        _    _
                      | |      | |  (_)
  _ __ ___   __ _ _ __| | _____| | ___
@@ -23,37 +23,37 @@
 | | | | | | (_| | |  |   <\__ \   <| |
 |_| |_| |_|\__,_|_|  |_|\_\___/_|\_\_|
     </pre>
+    <div>
+        <a href="/" class="no-decor" hx-get="/" hx-target="main" hx-push-url="true">
+            <button class="menubtn">
+                home
+            </button>
+        </a>
 
+        <a href="../software" class="no-decor" hx-get="software" hx-target="main" hx-push-url="true">
+            <button class="menubtn">
+                software & stuff
+            </button>
+        </a>
 
-    <a href="/" class="no-decor" hx-get="/" hx-target="main" hx-push-url="true">
-        <button class="menubtn">
-            home
-        </button>
-    </a>
+        <a href="../libs" class="no-decor" hx-get="libs" hx-target="main" hx-push-url="true">
+            <button class="menubtn">
+                libraries
+            </button>
+        </a>
 
-    <a href="software" class="no-decor" hx-get="software" hx-target="main" hx-push-url="true">
-        <button class="menubtn">
-            software & services
-        </button>
-    </a>
+        <a href="../blog" class="no-decor" hx-get="blog" hx-target="main" hx-push-url="true">
+            <button class="menubtn">
+                blog
+            </button>
+        </a>
 
-    <a href="libs" class="no-decor" hx-get="libs" hx-target="main" hx-push-url="true">
-        <button class="menubtn">
-            libraries
-        </button>
-    </a>
-
-    <a href="blog" class="no-decor" hx-get="blog" hx-target="main" hx-push-url="true">
-        <button class="menubtn">
-            blog
-        </button>
-    </a>
-
-    <a href="extras" class="no-decor" hx-get="extras" hx-target="main" hx-push-url="true">
-        <button class="menubtn">
-            extras
-        </button>
-    </a>
+        <a href="../extras" class="no-decor" hx-get="extras" hx-target="main" hx-push-url="true">
+            <button class="menubtn">
+                extras
+            </button>
+        </a>
+    </div>
 </header>
 <main>
     <!-- %%% SITE_CONTENT %%% -->

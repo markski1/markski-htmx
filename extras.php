@@ -37,6 +37,16 @@ $content = /** @lang HTML */
             <li><a href="http://www.paulgraham.com/identity.html" target="_blank">keep your identity small</a> - paul graham</li>
         </ul>
     </div>
+    <div>
+        <h4>attributions</h4>
+        <p>this website is made possible by:</p>
+        <ul>
+            <li><a href="https://htmx.org" target="_blank">htmx</a>, by Carson "1cg" Gross.</li>
+            <li><a href="https://parsedown.org" target="_blank">parsedown</a>, by Emanuil Rusev.</li>
+            <li><a href="https://nginx.org" target="_blank">nginx</a> by Igor Sysoev & colaborators.</li>
+            <li><a href="https://php.net" target="_blank">php</a> by the PHP group.</li>
+        </ul>
+    </div>
 
     
 EOD;
