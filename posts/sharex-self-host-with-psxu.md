@@ -23,7 +23,7 @@ After you've finished this guide, you will be able to quickly upload files to yo
 
 
 ### Downloading and configuring PSXU
-First, you will need to pick up PSXU from it's <Link style={{color: 'cyan'}} href="https://github.com/markski1/PSXU/releases/latest">Github releases page</Link>. Simply download the Source code in ZIP form, and uncompress it in a folder.
+First, you will need to pick up PSXU from it's [Github releases page](https://github.com/markski1/PSXU/releases/latest). Simply download the Source code in ZIP form, and uncompress it in a folder.
 
 Once done, you will find yourself with three files.
 

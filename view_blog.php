@@ -5,10 +5,8 @@ include 'template/parsedown.php';
 $path = "./posts/{$_GET['id']}.md";
 
 if (!file_exists($path)) {
-    $site = new Template("post not found");
-    $site->set_description("");
-    $site->set_content("<p>no such post exists.</p>");
-    $site->render();
+    // TODO: Actual fix the routing bug which this "fixes".
+    echo "<script>window.location.replace('/{$_GET['id']}');</script>";
     exit;
 }
 

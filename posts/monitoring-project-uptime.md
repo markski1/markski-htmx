@@ -3,7 +3,7 @@ October 9, 2023
 Once you're running a few hobby projects, you'll want to be the first to know when they fall.
 
 ### Prelude
-While I've been running hobby projects of my own in excess of a decade now, only recently have I began running a few on my own server. Namely <Link style={{color: 'cyan'}} href="https://sam.markski.ar/">SAMonitor</Link> and <Link style={{color: 'cyan'}} href="https://markski.ar/rosettes">Rosettes</Link>.
+While I've been running hobby projects of my own in excess of a decade now, only recently have I began running a few on my own server. Namely [SAMonitor](https://sam.markski.ar/) and [Rosettes](https://markski.ar/rosettes).
 
 Running stuff on your own server is pretty nifty. It's a learning path into DevOps, to some extent, and if you're smart about your choices it makes things rather cheap. You get full control of where and how your stuff will run, what domains and ports it'll run on, among other stuff.
 
@@ -25,7 +25,7 @@ Like every developer running hobby projects, I like things cheap. You know what'
 
 BetterStack is what I would describe as a "stability insights" service, offering a bunch of powerful of logging, troubleshooting and monitoring tools. The latter is the one relevant to today's matter.
 
-The first step is to head on over to <Link style={{color: 'cyan'}} href="https://betterstack.com/">betterstack.com</Link> and make an account. The free plan offers 10 monitors, e-mail alerts, and a Status page - I'll adress that bit too.
+The first step is to head on over to [betterstack.com](https://betterstack.com/) and make an account. The free plan offers 10 monitors, e-mail alerts, and a Status page - I'll adress that bit too.
 
 Out of the gate you will be asked for a phone number. Paid plans offer phone-calls if you fail to acknoweldge downtime after long enough, but with the free plan this won't concern you. Once you verify your e-mail and reach the user dashboard, you'll immediatly be able to set up your first monitor.
 

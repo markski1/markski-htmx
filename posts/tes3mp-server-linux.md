@@ -25,7 +25,7 @@ mkdir tes3mp
 cd tes3mp
 ```
 
-Then, proceed to grab the <Link style={{color: 'cyan'}} href="https://github.com/TES3MP/TES3MP/releases">latest TES3MP server binaries (VR versions don't count)</Link>.
+Then, proceed to grab the [latest TES3MP server binaries](https://github.com/TES3MP/TES3MP/releases) (VR versions don't count).
 
 As of the day of me writing this (May 2nd, 2023), 0.8.1 are the latest version, and we'd use the following commands to fetch them:
 

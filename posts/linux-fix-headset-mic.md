@@ -6,11 +6,11 @@ Audio devices issues on Linux are rare nowadays. But when they appear, they are 
 
 ### Prelude
 
-I recently made the choice of going back to daily driving Linux, specifically <Link style={{color: 'cyan'}} href="https://linuxmint.com/">Linux Mint</Link>. This has been, mostly, a surprisingly smooth experience, one I wish to write about in the coming weeks.
+I recently made the choice of going back to daily driving Linux, specifically [Linux Mint](https://linuxmint.com/). This has been, mostly, a surprisingly smooth experience, one I wish to write about in the coming weeks.
 
 However, I was stumped by what seemed at first a simple issue: Despite my headset being plugged into the 3.5mm combo jack of my laptop (specifically an ASUS GL553VD), the only audio input detected was the laptop's internal microphone.
 
-In my particular scenario, and perhaps yours too, the solution was by modifying an <Link style={{color: 'cyan'}} href="https://alsa-project.org/wiki/Main_Page">ALSA</Link> file.
+In my particular scenario, and perhaps yours too, the solution was by modifying an [ALSA](https://alsa-project.org/wiki/Main_Page) file.
 
 While it is not my intention to turn my personal blog into a generic "how to fix x issue" site, I was very frustrated by how long it took to come to a solution to this issue, so I figured I'd do my part on dumping it on this post.
 
@@ -31,7 +31,7 @@ Subdevice #0: subdevice #0
 
 The relevant information being on the first line, `ALC233` is the answer.
 
-Next, you must try to find the codec specific model for your laptop, in <Link style={{color: 'cyan'}} href="https://www.kernel.org/doc/html/latest/sound/hd-audio/models.html">this website</Link>.
+Next, you must try to find the codec specific model for your laptop, in [this website](https://www.kernel.org/doc/html/latest/sound/hd-audio/models.html).
 
 Because the naming schemes are rather inconsistent, I can't give suggestions on how to find yours, other than trying to do it by the audio chipset name, the computer's name, or both.
 
