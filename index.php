@@ -1,6 +1,9 @@
 <?php
 include 'template/engine.php';
 
+$site = new Template("home");
+$site->set_description("markski's personal website.");
+
 $content = /** @lang HTML */
     <<<EOD
 
@@ -31,7 +34,4 @@ $content = /** @lang HTML */
     
 EOD;
 
-$site = new Template("home");
-$site->set_description("markski's personal website.");
-$site->set_content($content);
-$site->render();
+$site->render($content);

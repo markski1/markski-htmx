@@ -1,6 +1,9 @@
 <?php
 include 'template/engine.php';
 
+$site = new Template("libraries");
+$site->set_description("miscelaneous libraries developed by me.");
+
 $content = /** @lang HTML */
     <<<EOD
 
@@ -39,7 +42,4 @@ $content = /** @lang HTML */
     
 EOD;
 
-$site = new Template("libraries");
-$site->set_description("miscelaneous libraries developed by me.");
-$site->set_content($content);
-$site->render();
+$site->render($content);

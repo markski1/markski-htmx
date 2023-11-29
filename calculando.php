@@ -1,6 +1,9 @@
 <?php
 include 'template/engine.php';
 
+$site = new Template("calculando");
+$site->set_description("open source progressive web application (pwa), providing common calculations relevant to the argentine republic.");
+
 $content = /** @lang HTML */
     <<<EOD
 
@@ -19,7 +22,4 @@ $content = /** @lang HTML */
     
 EOD;
 
-$site = new Template("calculando");
-$site->set_description("open source progressive web application (pwa), providing common calculations relevant to the argentine republic.");
-$site->set_content($content);
-$site->render();
+$site->render($content);

@@ -5,8 +5,8 @@ include 'template/parsedown.php';
 $path = "./posts/{$_GET['id']}.md";
 
 if (!file_exists($path)) {
-    // TODO: Actual fix the routing bug which this "fixes".
-    echo "<script>window.location.replace('/{$_GET['id']}');</script>";
+    $site = new Template("post not found");
+    $site->render("<p>this post doesn't seem to exist!</p>");
     exit;
 }
 
@@ -32,7 +32,8 @@ if (!isset($title) || !isset($date) || !isset($description)) {
     exit("an error ocurred.");
 }
 
-$post_content = $Parsedown->text($post_content);
+$site = new Template($title);
+$site->set_description($description);
 
 $content = /** @lang HTML */
     <<<EOD
@@ -42,13 +43,10 @@ $content = /** @lang HTML */
     <small style="color: #999999">{$date}</small>
     <hr>
     <div>
-        {$post_content}
+        {$Parsedown->text($post_content)}
     </div>
 
     
 EOD;
 
-$site = new Template($title);
-$site->set_description($description);
-$site->set_content($content);
-$site->render();
+$site->render($content);

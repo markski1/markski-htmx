@@ -1,6 +1,9 @@
 <?php
 include 'template/engine.php';
 
+$site = new Template("rosettes commands");
+$site->set_description("commands for the Rosettes discord bot.");
+
 $content = /** @lang HTML */
     <<<EOD
 
@@ -198,7 +201,4 @@ $content = /** @lang HTML */
     
 EOD;
 
-$site = new Template("rosettes commands");
-$site->set_description("commands for the Rosettes discord bot.");
-$site->set_content($content);
-$site->render();
+$site->render($content);

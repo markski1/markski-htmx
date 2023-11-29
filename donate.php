@@ -1,6 +1,8 @@
 <?php
 include 'template/engine.php';
 
+$site = new Template("donate");
+
 $content = /** @lang HTML */
     <<<EOD
 
@@ -18,7 +20,4 @@ $content = /** @lang HTML */
     
 EOD;
 
-$site = new Template("donate");
-$site->set_description("");
-$site->set_content($content);
-$site->render();
+$site->render($content);

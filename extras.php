@@ -1,6 +1,9 @@
 <?php
 include 'template/engine.php';
 
+$site = new Template("extas");
+$site->set_description("miscelaneous junk.");
+
 $content = /** @lang HTML */
     <<<EOD
 
@@ -51,7 +54,4 @@ $content = /** @lang HTML */
     
 EOD;
 
-$site = new Template("extas");
-$site->set_description("miscelaneous junk.");
-$site->set_content($content);
-$site->render();
+$site->render($content);

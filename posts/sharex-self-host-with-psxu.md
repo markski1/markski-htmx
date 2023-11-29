@@ -70,7 +70,7 @@ Create a new uploader, and fill in the blanks:
 
 It should end up looking something like this:
 
-![Screenshot displaying the correct settings in ShareX](/images/blog/psxu/sharex1.png)
+![Screenshot displaying the correct settings in ShareX](../images/blog/psxu/sharex1.png)
 
 Use the test buttons on the bottom left to ensure upload functions work. If they do, simply close the window, if they don't, read the error message and check the guide to make sure you did things correctly.
 

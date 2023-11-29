@@ -49,6 +49,6 @@ In less than 30 minutes, I (and perhaps you) got full uptime monitoring for all 
 By the end of this all, I got two two things:
 
 1. Email alerts whenever something goes down
-![Screenshot displaying an e-mail notification of a downtime incident.](/images/blog/uptime/alert.png)
+![Screenshot displaying an e-mail notification of a downtime incident.](../images/blog/uptime/alert.png)
 
 2. A nifty little status site at [status.markski.ar](https://status.markski.ar/) which, I can't imagine anyone would ever care to check, but hey, why not?

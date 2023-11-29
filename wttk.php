@@ -1,6 +1,9 @@
 <?php
 include 'template/engine.php';
 
+$site = new Template("wttk");
+$site->set_description("wttk is a lightweight, free and open source windows tweaking tool");
+
 $content = /** @lang HTML */
     <<<EOD
 
@@ -24,7 +27,4 @@ $content = /** @lang HTML */
     
 EOD;
 
-$site = new Template("wttk");
-$site->set_description("wttk is a lightweight, free and open source windows tweaking tool");
-$site->set_content($content);
-$site->render();
+$site->render($content);
