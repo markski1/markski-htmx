@@ -11,11 +11,6 @@ $content = /** @lang HTML */
     <h3>blog</h3>
     <hr>
     <div>
-        <h3>Fresh start</h3>
-        <p>vague reflecting on the new personal website.</p>
-        <p><sitelink to="blog/fresh-start">view post</sitelink></p>
-    </div>
-    <div>
         <h3>monitoring your projects' uptime is easier than you think</h3>
         <p>once you're running a few hobby projects, you'll want to be the first to know when they fall.</p>
         <p><sitelink to="blog/monitoring-project-uptime">view post</sitelink></p>

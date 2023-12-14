@@ -45,7 +45,7 @@ chmod +x ubuntu_tes3mp_deploy.sh
 sudo ./ubuntu_tes3mp_deploy.sh tes3mp-server.tar.gz tes3mp
 ```
 
-Next, you will want to open ports 25565 <small>(yes, the minecraft port)</small> for the game server, and 25561 for the master list. Assuming a standard Ubuntu server, simply do it with ufw.
+Next, you will want to open ports 25565 (yes, the minecraft port) for the game server, and 25561 for the master list. Assuming a standard Ubuntu server, simply do it with ufw.
 
 ```
 sudo ufw allow 25565

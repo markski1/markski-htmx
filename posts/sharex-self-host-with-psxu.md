@@ -8,7 +8,7 @@ Using a webserver as a personal content host to easily use with tools such as Sh
 
 When it comes to hosting images or files on the internet for quick sharing, there is a plethora of "free" options available, and for most purposes they are usually good enough.
 
-However, I take issue with some practices on the most common options.<br/>
+However, I take issue with some practices on the most common options.
 Be it the possibility of files just disappearing without warning or after inactivity, or services that might suddenly start serving your images inside iframes and surrounding them with advertisements.
 
 For this reason I've made PSXU, a simple PHP script for self-hosting that Sharex can interact with. In this post, I will teach you how to quickly set it up in your own web server.
