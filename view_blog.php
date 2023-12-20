@@ -21,9 +21,9 @@ foreach(file($path) as $line) {
         $post_content .= $line;
         continue;
     }
-    if ($linecount == 0) $title = $line;
-    if ($linecount == 1) $date = $line;
-    if ($linecount == 2) $description = $line;
+    if ($linecount == 0) $title = str_replace(array("\r", "\n"), '', $line);
+    if ($linecount == 1) $date = str_replace(array("\r", "\n"), '', $line);
+    if ($linecount == 2) $description = str_replace(array("\r", "\n"), '', $line);
 
     $linecount++;
 }

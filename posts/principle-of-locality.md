@@ -158,5 +158,5 @@ Matrixes are my go-to example, but you probably get the point: You got a big chu
 ## Sources
 
 - "Introduction to High Performance Computing for Scientists and Engineers". Georg Hager, Gerard Wellein. (2011)
-- The examples are largely based in those given in a Parallel Systems class I took in the National University of La Plata in early 2023, given by an excellent professor, Dr. Enzo Rucci.
+- The examples are largely based in those given in a Parallel Systems class I took in the National University of La Plata in early 2023.
 - The memory hierarchy pyramid graphic was taken from the blog of the Computer Science department of Swarthmore College.
