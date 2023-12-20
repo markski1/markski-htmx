@@ -1,5 +1,5 @@
 The principle of locality
-December 11, 2023
+December 19, 2023
 From the heart of the machine, random access memory is not all that random.
 
 ---
@@ -7,6 +7,22 @@ From the heart of the machine, random access memory is not all that random.
 In this article, I'll visit what I've found to be a fascinating problem in computer science, often overlooked by many types of developers who maybe don't have to concern with this level of lack of abstraction.
 
 Even if this doesn't apply in the type of work you do, I believe you might find it interesting either way.
+
+### Summary
+
+- [Prelude](#prelude)
+- [The cost of Random Access](#the-cost-of-random-access)
+  - [Memory Wall](#memory-wall)
+- [Example scenario](#example-scenario)
+  - [Hardware](#hardware)
+  - [Problem](#problem)
+- [Solution](#solution)
+  - [Bandwidth joins the server](#bandwidth-joins-the-server)
+  - [Linear access joins the server](#linear-access-joins-the-server)
+- [The point](#the-point)
+  - [On manually allocating data](#on-manually-organizing-data)
+- [Sources](#sources)
+
 
 ## Prelude
 In the introductory classes of computer science theory, a pyramid representing the "computer memory hierarchy" is one of the first things to be burned into our minds.
@@ -31,7 +47,7 @@ It seems intuitive from the name to assume that randomly accessing data in rando
 
 In many applications, the limitation is found in the memory system, not in the processor. The two main parameters are latency and, to a lesser extent, bandwidth.
 
-## Example
+## Example scenario
 
 I find matrix multiplication to be an excelent example for memory locality problems. It is, after all, one of the most common operations in many High Performance Computing applications.
 
@@ -57,7 +73,7 @@ In total, it'll take 6,721,536 nanoseconds to resolve 2^16 operations.
 
 ***Our theoretical performance of 1 GFlop has plumetted to 9,75 MFlops.***
 
-### Solution
+## Solution
 
 As you may have guessed, we want to reduce the time it takes to fetch and write from memory. This is where CPU cache saves the day.
 
@@ -89,11 +105,58 @@ Bandwidth is the speed wherein data can be transferred from memory to CPU. A com
 
 Continuing with our theoretical hardware, let's now say the blocksize is 4 times that of an element of the matrix.
 
-[TBC]
+We'll now do the same operation on this machine.
+
+- We'll need to do just as much compute. (65,536ns total)
+- For each operation, we have to fetch both operands. The first fetch per element will also miss cache, but fetch 4 items each time. ( (24+4*N) * 2N^2 = 152 * 2048 = 311,296ns)
+- We'll still need to store each result in memory, but only one access per 4 writes. (25,600ns total)
+
+In total, it'll take 402,432ns to resolve.
+
+***Our previous theoretical performance of 104,6 MFlops has increased to 162,8 MFlops.***
+
+This improvement is based on the succesive instructions using data located in consecutive memory spaces.
+
+This is what we call ***Spatial Locality***. Moving on...
+
+### Linear access joins the server
+
+As a callback to the start of the post, randomly accessing random access memory can actually have a performance impact depending on the problem.
+
+Consider the following loop in which we multiply the total sum of B by columns.
+
+```
+for (i = 0; i < 1000; i++) {
+    sum[i] = 0.0;
+    for (j = 0; j < 1000; j++) {
+        sum[i] += B[j][i];
+    }
+}
+````
+
+We are going through B's elements by columns. Now what happens if the B matrix is in memory by consecutive rows? **We are not taking advantage of spatial locality**. Every initial fetch of an element will result in a cache miss. What's worse, if B is too large for our CPU's cache, we won't even get to benefit from temporal locality!
 
 
-### Sources
+## The point
+
+- Temporal and spatial locality are essential and must be exploited for the best performance.
+- Number of operations is a good indicator of performance, but number of memory accesses will yield the most important results in terms of real-world time.
+- The way data is ordered in memory, and how the program goes around fetching it, can have a significant impact and should not be obviated.
+
+### On manually organizing data
+
+Well, if the language has an opinionated choice of how it'll allocate your matrix, how do you solve this?
+
+By manually allocating it! In the case of C, as an example, you can just allocate for the total size of elements a matrix will have.
+
+`float * M = malloc( N * N * sizeof(float) );`
+
+Now you can use whatever order you want. After all, you now just have a really large memory space to store all the numbers you need, and it's up to you in what order you'll write and read from it. (For example, column ordered: `r*N+c` ; row ordered: `c*N+r`)
+
+Matrixes are my go-to example, but you probably get the point: You got a big chunk of memory and you can put whatever you want, however you want in it.
+
+## Sources
 
 - "Introduction to High Performance Computing for Scientists and Engineers". Georg Hager, Gerard Wellein. (2011)
-- Miscelaneous materials from a Parallel Systems class I took in the National University of La Plata in late 2021.
+- The examples are largely based in those given in a Parallel Systems class I took in the National University of La Plata in early 2023, given by an excellent professor, Dr. Enzo Rucci.
 - The memory hierarchy pyramid graphic was taken from the blog of the Computer Science department of Swarthmore College.
