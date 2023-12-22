@@ -4,7 +4,7 @@ From the heart of the machine, random access memory is not all that random.
 
 ---
 
-In this article, I'll visit what I've found to be a fascinating problem in computer science, often overlooked by many types of developers who maybe don't have to concern with this level of lack of abstraction.
+In this article, I'll visit what I've found to be a fascinating principle in computer science, often overlooked as many types of developers don't really need to concern with such a low level of abstraction.
 
 Even if this doesn't apply in the type of work you do, I believe you might find it interesting either way.
 
@@ -29,7 +29,7 @@ In the introductory classes of computer science theory, a pyramid representing t
 
 ![MemoryHierarchy.png](../images/blog/locality/MemoryHierarchy.png)
 
-I am not a fan of the measurements in cycles, since of course there's a lot of processor types and they all do things a bit different. But it seems like a sufficiently accurate assumption to make that, that, as you move down the pyramid, you'll see latency increases of around an order of magnitude.
+I am not a fan of the measurements in cycles, since of course there's a lot of processor types and they all do things a bit different. But it seems like a sufficiently accurate assumption to make that, as you move down the pyramid, you'll see latency increases of around an order of magnitude.
 
 To revisit the top 3, marked as primary storage.
 
