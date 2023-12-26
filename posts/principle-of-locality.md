@@ -4,9 +4,9 @@ From the heart of the machine, random access memory is not all that random.
 
 ---
 
-In this article, I'll visit what I've found to be a fascinating principle in computer science, often overlooked as many types of developers don't really need to concern with such a low level of abstraction.
+The biggest surprise I ever had in computer science was in the shape of how the memory system in a modern computer works.  Or rather, how the way I imagined it works for over 10 years is very much not how it works.
 
-Even if this doesn't apply in the type of work you do, I believe you might find it interesting either way.
+It is obvious now that I know it, but it's funny how your brain will fill in the gaps in your knoweldge with what -feels- obvious at a given time. Today I'll visit the basics of locality, and how Random Access Memory is not all that Random in the real world.
 
 ### Summary
 
@@ -49,7 +49,9 @@ In many applications, the limitation is found in the memory system, not in the p
 
 ## Example scenario
 
-I find matrix multiplication to be an excelent example for memory locality problems. It is, after all, one of the most common operations in many High Performance Computing applications.
+Solving problems is what drives us into computer science. So I find the best way to bring this across is by proposing a problem.
+
+We'll be delving into matrix multiplication, because it's a relatively simple procedure which is also very common in high performance compute enviroments.
 
 ### Hardware
 
@@ -59,13 +61,13 @@ Such a system would have a peak theoretical performance of 1000 MFlops (1 second
 
 ### Problem
 
-**Suppose** we wish to multiply two matrixes, A and B, each of size N * N (where N is any positive integer). We want 
+**Suppose** we wish to multiply two matrixes, A and B, each of size N * N (where N is any positive integer). 
 
 We will need N^3 addition and multiplication operations, or N^3 nanoseconds worth of compute time. For each operation however, we'll need 200 nanoseconds to fetch both operands, and 100 nanoseconds to store the result.
 
 With **N=32**, we find that:
 
-- We'll need 2*(32^3) operations of sum/multiplication ops. (65,536ns total)
+- We'll need 2*(32^3) sum/multiplication operations. (65,536ns total)
 - We'll need to fetch both operands from memory per each operation. (6,553,600ns total)
 - We'll need to store each result in memory. (102,400ns total)
 
@@ -125,7 +127,7 @@ As a callback to the start of the post, randomly accessing random access memory 
 
 Consider the following loop in which we multiply the total sum of B by columns.
 
-```
+```c
 for (i = 0; i < 1000; i++) {
     sum[i] = 0.0;
     for (j = 0; j < 1000; j++) {
