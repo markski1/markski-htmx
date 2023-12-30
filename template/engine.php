@@ -36,7 +36,9 @@ class Template {
             exit;
         }
 
-        $site = file_get_contents("template/layout.html");
+        $site = @file_get_contents("template/layout.html");
+
+        if (!$site) $site = @file_get_contents("../template/layout.html");
 
         // insert title and content into the template
         $site = str_replace("<!-- %%% SITE_TITLE %%% -->", $this->title, $site);
