@@ -99,11 +99,10 @@ if (GifFrameExtractor::isAnimatedGif($basePath)) {
     }
 
     $gc = new GifCreator();
-    $gc->create($retouchedFrames, $timingArr, 0);
+    $gc->create($retouchedFrames, $timingArr);
 
     // Set the content-type
 
     header("Content-type: image/gif");
     echo $gc->getGif();
 }
-?>

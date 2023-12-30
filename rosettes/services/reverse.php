@@ -21,9 +21,8 @@ if (GifFrameExtractor::isAnimatedGif($imagePath)) {
 
     header("Content-type: image/gif");
     $gc = new GifCreator();
-    echo $gc->create($retouchedFrames, array_reverse($gfe->getFrameDurations()), 0);
+    echo $gc->create($retouchedFrames, array_reverse($gfe->getFrameDurations()));
 }
 else {
     exit('err');
 }
-?>

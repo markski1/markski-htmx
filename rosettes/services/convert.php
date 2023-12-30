@@ -8,13 +8,11 @@ switch (strtolower($type)) {
 	case "image/png":
 		$image = imagecreatefrompng($imagePath);
 		break;
-	case "image/jpg":
+    case "image/jpeg":
+    case "image/jpg":
 		$image = imagecreatefromjpeg($imagePath);
 		break;
-	case "image/jpeg":
-		$image = imagecreatefromjpeg($imagePath);
-		break;
-	case "image/gif":
+    case "image/gif":
 		$image = imagecreatefromgif($imagePath);
 		break;
 	case "image/webp":
@@ -28,7 +26,6 @@ switch (strtolower($type)) {
 		break;
 	default:
 		exit("err1");
-		break;
 }
 
 switch ($_GET['format']) {
@@ -58,8 +55,4 @@ switch ($_GET['format']) {
 		break;
 	default:
 		exit("err22");
-		break;
 }
-
-
-?>
