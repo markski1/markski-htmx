@@ -33,7 +33,7 @@ $content = /** @lang HTML */
                     admin panel
                 </button>
             </a>
-            <button class="menubtn brighter" hx-get="rosettes-commands" hx-target="main" hx-push-url="true">
+            <button class="menubtn brighter" hx-get="rosettes/commands" hx-target="main" hx-push-url="true">
                 command list
             </button>
             <button class="menubtn brighter" hx-get="donate" hx-target="main" hx-push-url="true">
