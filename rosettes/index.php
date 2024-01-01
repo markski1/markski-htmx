@@ -28,9 +28,11 @@ $content = /** @lang HTML */
                     add to server
                 </button>
             </a>
-            <button class="menubtn brighter" hx-get="/rosettes/panel" hx-target="main" hx-push-url="true">
+            <a class="no-decor" href="/rosettes/panel">
+                <button class="menubtn brighter">
                     admin panel
-            </button>
+                </button>
+            </a>
             <button class="menubtn brighter" hx-get="/rosettes/commands.php" hx-target="main" hx-push-url="true">
                 command list
             </button>

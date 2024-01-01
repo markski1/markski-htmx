@@ -35,10 +35,6 @@ $content = /** @lang HTML */
         <a href="https://github.com/markski1/SAMP-vModData" target="_blank">view on github</a>
     </div>
     
-    <style>
-        
-    </style>
-    
     
 EOD;
 

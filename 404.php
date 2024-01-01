@@ -12,7 +12,7 @@ $content = /** @lang HTML */
     <p>i don't have whatever it is you want.</a>
     </ul>
 
-    
+
 EOD;
 
 $site->render($content);

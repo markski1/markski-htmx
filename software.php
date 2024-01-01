@@ -25,7 +25,7 @@ $content = /** @lang HTML */
     <div>
         <h4>WTTk</h4>
         enables tweaking hidden windows settings.<br />
-        <sitelink to="wttk">learn more</sitelink> - <a href="http://github.com/markski1/WTTk" target="_blank">github</a>
+        <sitelink to="wttk">learn more</sitelink> - <a href="https://github.com/markski1/WTTk" target="_blank">github</a>
     </div>
     <div>
         <h4>Calculando Argentina</h4>
