@@ -1,7 +1,7 @@
 <?php
 	include_once("funcs.php");
     include_once("emoji/Emoji.php");
-    
+
 	$db = db_connect();
 
 	if (!CheckSession($db, $namecache, $id)) {
@@ -50,32 +50,26 @@
         $query->bind_param("ssss", $GuildId, $role['emoji'], $role['roleid'], $GroupId);
 		$query->execute();
 	}
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rosettes - Role Management</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<center>
-			<h1 class="title">Rosettes</h1>
-			<p class="headingMd"><b>AutoRoles saved</b></p>
-			<hr />
-			<div class='headingContainer'>
-				<p><big>You're almost done!</big></p>
-				<p>A new AutoRole group has been created.</p>
-				<p>All that's left is to use "<b>/setautorole <?=$GroupId?></b>" in the desired channel.</p>
-				<p>If you don't want to do it now, you can do it anytime you want.</p>
-			</div>
+$site = new PanelTemplate("AutoRole Created");
 
-			<a href="roles?guild=<?=$GuildId?>"><button type="button" class='button' style='width: 10rem; margin: 10px'>Return</button></a>
-		</center>
-	</div>
-</body>
-</html>
+$content = /** @lang HTML */
+<<<EOD
+
+
+    <h1 class="title">Rosettes</h1>
+    <p class="headingMd"><b>AutoRoles saved</b></p>
+    <hr />
+    <div class='headingContainer'>
+        <p><big>You're almost done!</big></p>
+        <p>A new AutoRole group has been created.</p>
+        <p>All that's left is to use "<b>/setautorole {$GroupId}</b>" in the desired channel.</p>
+        <p>If you don't want to do it now, you can do it anytime you want.</p>
+    </div>
+    
+    <a href="roles?guild={$GuildId}"><button type="button" class='button' style='width: 10rem; margin: 10px'>Return</button></a>
+
+
+EOD;
+
+$site->render($content);

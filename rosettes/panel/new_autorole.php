@@ -1,4 +1,5 @@
 <?php
+    // Due to it's complexity this page is yet to be moved to the new templating thing.
 	include_once("funcs.php");
 	$db = db_connect();
 

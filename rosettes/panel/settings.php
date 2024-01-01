@@ -1,4 +1,5 @@
 <?php
+    // Yet-unupgraded due to complexity
 	include_once("funcs.php");
 	$db = db_connect();
 
