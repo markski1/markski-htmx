@@ -1,4 +1,5 @@
 <?php
+include("funcs.php");
 if (isset($_COOKIE['rosettes_key']) && $_COOKIE['rosettes_key'] != "_"){
     Header('Location: panel');
     exit;

@@ -162,7 +162,7 @@ $content = /** @lang HTML */
         }
         
         function printRoleEntry(item, index) {
-            document.getElementById("RoleEmojiList").innerHTML += "<p>When user clicks " + item.roleEmoji + " they get \"<b>" + item.roleName + "</b>\".</p>\n";
+            document.getElementById("RoleEmojiList").innerHTML += "<p>When user clicks " + item.roleEmoji + " they get \"<b>" + item.roleName + "</b>\".</p>";
             var form1 = document.createElement("input");
             form1.type = "text";
             form1.name = "roleEntry[" + index + "][emoji]";
