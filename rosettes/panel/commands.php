@@ -43,8 +43,7 @@ else {
 
 $site = new PanelTemplate("Commands");
 
-$content = /** @lang HTML */
-<<<EOD
+$content = <<<HTML
     
     
     <h1 class="title">Rosettes</h1>
@@ -61,6 +60,6 @@ $content = /** @lang HTML */
     <a href="panel"><button type="button" class='button' style='width: 12rem; margin: 10px'>Return</button></a>
 			
 			
-EOD;
+HTML;
 
 $site->render($content);

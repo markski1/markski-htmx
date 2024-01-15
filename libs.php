@@ -5,7 +5,7 @@ $site = new Template("libraries");
 $site->set_description("miscelaneous libraries developed by me.");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
     
     <h3>libraries</h3>
@@ -36,6 +36,6 @@ $content = /** @lang HTML */
     </div>
     
     
-EOD;
+HTML;
 
 $site->render($content);

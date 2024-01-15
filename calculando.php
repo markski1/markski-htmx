@@ -5,7 +5,7 @@ $site = new Template("calculando");
 $site->set_description("open source progressive web application (pwa), providing common calculations relevant to the argentine republic.");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>calculando argentina</h3>
@@ -20,6 +20,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

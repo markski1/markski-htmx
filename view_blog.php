@@ -36,7 +36,7 @@ $site = new Template($title);
 $site->set_description($description);
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h1>{$title}</h1>
@@ -47,6 +47,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

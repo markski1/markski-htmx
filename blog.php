@@ -5,7 +5,7 @@ $site = new Template("blog");
 $site->set_description("markski's blog.");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>blog</h3>
@@ -37,6 +37,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

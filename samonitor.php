@@ -5,7 +5,7 @@ $site = new Template("samonitor");
 $site->set_description("free, open source and public server browser, api and masterlist provider for sa-mp and open.mp.");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>samonitor</h3>
@@ -19,6 +19,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

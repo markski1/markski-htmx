@@ -5,7 +5,7 @@ $site = new Template("rosettes commands");
 $site->set_description("commands for the Rosettes discord bot.");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>rosettes commands</h3>
@@ -199,6 +199,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

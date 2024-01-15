@@ -5,7 +5,7 @@ $site = new Template("writar");
 $site->set_description("free, open source and public document sharing.");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>writar</h3>
@@ -19,6 +19,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

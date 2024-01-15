@@ -4,7 +4,7 @@ include 'template/engine.php';
 $site = new Template("donate");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>make a donation</h3>
@@ -18,6 +18,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

@@ -5,7 +5,7 @@ $site = new Template("404");
 $site->set_description("site not found.");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>four. oh. four.</h3>
@@ -13,6 +13,6 @@ $content = /** @lang HTML */
     </ul>
 
 
-EOD;
+HTML;
 
 $site->render($content);

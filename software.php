@@ -2,7 +2,7 @@
 include 'template/engine.php';
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
     
     <h3>software & stuff</h3>
@@ -36,7 +36,7 @@ $content = /** @lang HTML */
     <iframe src="https://status.markski.ar/badge?theme=dark" style="border: 0; width: 250px; height: 32px; margin-top: 2rem;"></iframe>
     
     
-EOD;
+HTML;
 
 $site = new Template("software & stuff");
 $site->set_description("software and stuff made by me.");

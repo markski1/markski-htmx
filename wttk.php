@@ -5,7 +5,7 @@ $site = new Template("wttk");
 $site->set_description("wttk is a lightweight, free and open source windows tweaking tool");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h3>wttk</h3>
@@ -25,6 +25,6 @@ $content = /** @lang HTML */
     </div>
 
     
-EOD;
+HTML;
 
 $site->render($content);

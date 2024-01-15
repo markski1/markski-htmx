@@ -45,8 +45,7 @@ else {
 
 $site = new PanelTemplate("Settings");
 
-$content = /** @lang HTML */
-<<<EOD
+$content = <<<HTML
     
     
     <h1 class="title">Rosettes</h1>
@@ -88,6 +87,6 @@ $content = /** @lang HTML */
     </small></p>
 
 
-EOD;
+HTML;
 
 $site->render($content);

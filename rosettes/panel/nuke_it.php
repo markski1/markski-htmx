@@ -44,8 +44,7 @@ else {
 
 $site = new PanelTemplate("Guild Nuked");
 
-$content = /** @lang HTML */
-<<<EOD
+$content = <<<HTML
     
     
     <h1 class="title">Rosettes</h1>
@@ -58,6 +57,6 @@ $content = /** @lang HTML */
     </div>
 
 
-EOD;
+HTML;
 
 $site->render($content);

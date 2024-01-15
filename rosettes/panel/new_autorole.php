@@ -49,7 +49,7 @@ foreach ($roles as $role) {
 $site = new PanelTemplate("Role Management");
 
 $content = /** @lang HTML */
-    <<<EOD
+    <<<HTML
 
 
     <h1 class="title">Rosettes</h1>
@@ -190,6 +190,6 @@ $content = /** @lang HTML */
     </script>
 
 
-EOD;
+HTML;
 
 $site->render($content);

@@ -42,8 +42,7 @@ $query->execute();
 
 $site = new PanelTemplate("Command Management");
 
-$content = /** @lang HTML */
-<<<EOD
+$content = <<<HTML
 
 
     <h1 class="title">Rosettes</h1>
@@ -53,6 +52,6 @@ $content = /** @lang HTML */
     <a href="browse_cmds?guild={$GuildId}"><button type="button" class='button' style='width: 10rem; margin: 10px'>Return</button></a>
 
 
-EOD;
+HTML;
 
 $site->render($content);

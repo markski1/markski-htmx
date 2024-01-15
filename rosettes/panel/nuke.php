@@ -23,8 +23,7 @@ $guild_info = GetGuildInfo($db, $GuildId);
 
 $site = new PanelTemplate("Nuke Guild");
 
-$content = /** @lang HTML */
-<<<EOD
+$content = <<<HTML
 
 
     <h1 class="title">Rosettes</h1>
@@ -51,6 +50,6 @@ $content = /** @lang HTML */
     </p>
 
 
-EOD;
+HTML;
 
 $site->render($content);

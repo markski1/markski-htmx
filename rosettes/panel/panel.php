@@ -32,8 +32,7 @@ else {
 
 $site = new PanelTemplate("Panel");
 
-$content = /** @lang HTML */
-<<<EOD
+$content = <<<HTML
     <h1 class="title">Rosettes</h1>
     <p class="headingMd">Hello, <?=$namecache?></p>
     <hr />
@@ -44,6 +43,6 @@ $content = /** @lang HTML */
     <a href="action/logout.php"><button class='button' style='width: 8rem; margin: 10px'>Log out</button></a></p>
 
 
-EOD;
+HTML;
 
 $site->render($content);
