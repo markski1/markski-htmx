@@ -4,8 +4,7 @@ include 'template/engine.php';
 $site = new Template("blog");
 $site->set_description("markski's blog.");
 
-$content = /** @lang HTML */
-    <<<HTML
+$content = <<<HTML
 
 
     <h3>blog</h3>

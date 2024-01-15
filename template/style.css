@@ -126,3 +126,16 @@ li {
     color: #DDDDDD;
     background-color: #111111;
 }
+
+/* Animate */
+
+.opacity-trans{
+    opacity:1;
+    transition: opacity 175ms ease-in;
+}
+.htmx-request .opacity-trans{
+    opacity:0.1
+}
+.htmx-request.opacity-trans{
+    opacity:0.1
+}

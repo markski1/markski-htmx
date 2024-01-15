@@ -29,6 +29,7 @@ class Template {
         );
 
         if (isset($_SERVER['HTTP_HX_REQUEST'])) {
+            header('Vary: HX-Request');
             echo $content;
             echo "<script>
                       document.title = '{$this->title} - markski';
