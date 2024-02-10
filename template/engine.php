@@ -23,7 +23,7 @@ class Template {
                 $destination_url = $matches[1];
                 $destination_text = $matches[2];
 
-                return "<a href='../{$destination_url}' hx-get='../{$destination_url}' hx-push-url='true' hx-target='main'>{$destination_text}</a>";
+                return "<a href='../{$destination_url}' hx-get='../{$destination_url}' hx-push-url='true' hx-target='main' hx-indicator='main'>{$destination_text}</a>";
             },
             $content
         );
