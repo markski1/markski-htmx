@@ -10,6 +10,11 @@ $content = <<<HTML
     <h3>blog</h3>
     <hr>
     <div>
+        <h3>self-hosting with bsxu</h3>
+        <p>leverage sharex, backblaze b2 and your webserver to hold and serve your own files easily.</p>
+        <p><sitelink to="blog/bsxu-b2-hosting">view post</sitelink></p>
+    </div>
+    <div>
         <h3>the principle of locality</h3>
         <p>random access memory and how to use it is far less trivial than i once thougth.</p>
         <p><sitelink to="blog/principle-of-locality">view post</sitelink></p>
@@ -31,7 +36,7 @@ $content = <<<HTML
     </div>
     <div>
         <h3>hosting your own sharex screenshots with psxu</h3>
-        <p>using a webserver as a personal content host to easily use with tools such as sharex.</p>
+        <p>[legacy] using a webserver as a personal content host to easily use with tools such as sharex.</p>
         <p><sitelink to="blog/sharex-self-host-with-psxu">view post</sitelink></p>
     </div>
 

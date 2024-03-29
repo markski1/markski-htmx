@@ -10,7 +10,7 @@ $content = <<<HTML
     <h3>about</h3>
     <p>i am a computer science student from la plata, argentina.</br>
     fullstack developer as a hobby, backend developer for a living.</p>
-    <small>latest blog post: <sitelink to="blog/principle-of-locality">the principle of locality</sitelink></small>
+    <small>latest blog post: <sitelink to="blog/bsxu-b2-hosting">self-hosting with bsxu</sitelink></small>
     <h3>domains i work within:</h3>
     <ul>
         <li>backend development</li>

@@ -4,6 +4,12 @@ Using a webserver as a personal content host to easily use with tools such as Sh
 
 ---
 
+### Note
+
+As of March 29, 2024, I released [BSXU](https://markski.ar/blog/bsxu-b2-hosting), which is what I consider to be the replacement of PSXU.
+
+It adds a few things, like automatically uploading to Backblaze B2. However, it's written in Python. If a PHP implementation is what you seek, then use PSXU.
+
 ### Prelude
 
 When it comes to hosting images or files on the internet for quick sharing, there is a plethora of "free" options available, and for most purposes they are usually good enough.
