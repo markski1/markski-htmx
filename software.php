@@ -28,6 +28,11 @@ $content = /** @lang HTML */
         <sitelink to="wttk">learn more</sitelink> - <a href="https://github.com/markski1/WTTk" target="_blank">github</a>
     </div>
     <div>
+        <h4>BSXU</h4>
+        custom uploader for self-hosting files. sharex compatible. backs up files up to Backblaze B2<br>
+        <a href="https://github.com/markski1/BSXU" target="_blank">view on github</a>
+    </div>
+    <div>
         <h4>Calculando Argentina</h4>
         web app with calculators relevant to argentina.<br />
         <sitelink to="calculando">learn more</sitelink> - <a href="https://github.com/markski1/Calculadoras" target="_blank">github</a>
