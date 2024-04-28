@@ -19,7 +19,7 @@ $content = /** @lang HTML */
             <li>ability to change and disable many Windows behaviours which cannot be changed from any of windows' front-facing UI.</li>
             <li>a shutdown scheduler.</li>
         </ul>
-        <img src="/assets/images/wttk.png" alt="screenshot of the application" width="500">
+        <img src="/images/wttk.png" alt="screenshot of the application" width="500">
         <p><a href="https://github.com/markski1/WinTweakTool/releases/latest" target="_blank">download latest version</a> - <a href="https://github.com/markski1/WinTweakTool" target="_blank">view on github</a></p>
         <p>support development with a <sitelink to="donate">donation</sitelink></p>
     </div>
