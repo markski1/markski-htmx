@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Nunito+Sans:opsz@6..12&display=swap');
+@font-face {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/dependencies/IBM-Plex-Mono.woff2) format('woff2');
+}
 
 body {
     background-color: #222229;

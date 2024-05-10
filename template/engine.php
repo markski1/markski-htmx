@@ -5,16 +5,19 @@ class Template {
     private string $title;
     private string $description;
 
-    public function __construct($title) {
+    public function __construct($title)
+    {
         $this->title = $title;
         $this->description = "";
     }
 
-    function set_description($description) {
+    function set_description($description): void
+    {
         $this->description = $description;
     }
 
-    function render($content) {
+    function render($content): void
+    {
         $sitelink_pattern = '/<sitelink to="([^"]*)">([^<]+)<\/sitelink>/';
 
         $content = preg_replace_callback(
@@ -28,7 +31,8 @@ class Template {
             $content
         );
 
-        if (isset($_SERVER['HTTP_HX_REQUEST'])) {
+        if (isset($_SERVER['HTTP_HX_REQUEST']))
+        {
             header('Vary: HX-Request');
             echo $content;
             echo "<script>
