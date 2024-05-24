@@ -98,7 +98,7 @@ $content = /** @lang HTML */
                 <br>I am always adding new things, and welcoming new ideas.
             </li>
         </ul>
-        <p>for a list of commands, <sitelink to="rosettes-commands">click here</sitelink>.</p>
+        <p>for a list of commands, <sitelink to="rosettes/commands">click here</sitelink>.</p>
         <p>to support hosting and development, <sitelink to="donate">click here</sitelink>.</p>
     </div>
 

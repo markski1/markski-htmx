@@ -15,8 +15,8 @@ $content = /** @lang HTML */
         <h3>utility commands</h3>
         
         <div>
-            <h4>/twtvid <small>[tweet url]</small></h4>
-            <p>download the video of the given tweet.</p>
+            <h4>/getvideo <small>[media url]</small></h4>
+            <p>download the video of the given link. [twitter, instagram, tiktok, youtube, etc]</p>
         </div>
         <div>
             <h4>/alarm <small>[amount] [optional:time unit]</small></h4>
@@ -73,11 +73,11 @@ $content = /** @lang HTML */
             <p>finds information about an anime.</p>
         </div>
         <div>
-            <h4>/find manga  <small>[term]</small></h4>
+            <h4>/find manga <small>[term]</small></h4>
             <p>finds information about a manga.</p>
         </div>
         <div>
-            <h4>/find character  <small>[term]</small></h4>
+            <h4>/find character <small>[term]</small></h4>
             <p>finds information about a character from animated media.</p>
         </div>
     </div>
