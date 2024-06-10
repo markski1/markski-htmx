@@ -5,8 +5,8 @@ include 'template/parsedown.php';
 $path = "./posts/{$_GET['id']}.md";
 
 if (!file_exists($path)) {
-    $site = new Template("post not found");
-    $site->render("<p>this post doesn't seem to exist!</p>");
+    $site = new Template("Post not found");
+    $site->render("<p>This post doesn't seem to exist.</p>");
     exit;
 }
 
@@ -29,7 +29,7 @@ foreach(file($path) as $line) {
 }
 
 if (!isset($title) || !isset($date) || !isset($description)) {
-    exit("an error ocurred.");
+    exit("An error ocurred.");
 }
 
 $site = new Template($title);

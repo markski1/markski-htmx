@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title><!-- %%% SITE_TITLE %%% --> - markski</title>
+    <title><!-- %%% SITE_TITLE %%% --> - Markski</title>
 
     <meta name="description" content="<!-- %%% SITE_DESCRIPTION %%% -->">
     <meta name="og:title" content="<!-- %%% SITE_TITLE %%% --> - markski" />
@@ -20,34 +20,36 @@
 | | | | | | (_| | |  |   <\__ \   <| |
 |_| |_| |_|\__,_|_|  |_|\_\___/_|\_\_|
     </pre>
-    <div>
-        <a href="../" class="no-decor" hx-get="../" hx-target="main" hx-push-url="true" hx-indicator="main">
+</header>
+<main>
+    <div class="layout-menu">
+        <a href="../" class="no-decor" hx-get="../" hx-target="#main-content" hx-push-url="true" hx-indicator="#main-content">
             <button class="menubtn">
-                home
+                HOME
             </button>
         </a>
 
-        <a href="../software" class="no-decor" hx-get="../software" hx-target="main" hx-push-url="true" hx-indicator="main">
+        <a href="../software" class="no-decor" hx-get="../software" hx-target="#main-content" hx-push-url="true" hx-indicator="#main-content">
             <button class="menubtn">
-                software & stuff
+                SOFTWARE
             </button>
         </a>
 
-        <a href="../libs" class="no-decor" hx-get="../libs" hx-target="main" hx-push-url="true" hx-indicator="main">
+        <a href="../libs" class="no-decor" hx-get="../libs" hx-target="#main-content" hx-push-url="true" hx-indicator="#main-content">
             <button class="menubtn">
-                libraries
+                LIBRARIES
             </button>
         </a>
 
-        <a href="../blog" class="no-decor" hx-get="../blog" hx-target="main" hx-push-url="true" hx-indicator="main">
+        <a href="../blog" class="no-decor" hx-get="../blog" hx-target="#main-content" hx-push-url="true" hx-indicator="#main-content">
             <button class="menubtn">
-                blog
+                BLOG
             </button>
         </a>
     </div>
-</header>
-<main class="opacity-trans">
-    <!-- %%% SITE_CONTENT %%% -->
+    <div class="layout-content opacity-trans" id="main-content">
+        <!-- %%% SITE_CONTENT %%% -->
+    </div>
 </main>
 </body>
 </html>

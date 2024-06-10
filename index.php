@@ -1,34 +1,35 @@
 <?php
 include 'template/engine.php';
 
-$site = new Template("home");
-$site->set_description("markski's personal website.");
+$site = new Template("Home");
+$site->set_description("Markski's personal website.");
 
 $content = <<<HTML
 
 
-    <h3>about</h3>
-    <p>i am a computer science student from la plata, argentina.</br>
-    fullstack developer as a hobby, backend developer for a living.</p>
-    <small>latest blog post: <sitelink to="blog/bsxu-b2-hosting">self-hosting with bsxu</sitelink></small>
-    <h3>domains i work within:</h3>
+    <h3>About</h3>
+    <hr>
+    <p>I am a computer science student from La Plata, Argentina.</br>
+    Fullstack developer as a hobby, backend developer for a living.</p>
+    <small>Latest blog post: <sitelink to="blog/bsxu-b2-hosting">Self-hosting with BSXU</sitelink></small>
+    <h3>Domains I work within:</h3>
     <ul>
-        <li>backend development</li>
-        <li>server administration</li>
-        <li>database administration</li>
-        <li>performance analysis</li>
-        <li>system design</li>
-        <li>automation</li>
+        <li>Backend development</li>
+        <li>Server administration</li>
+        <li>Database administration</li>
+        <li>Performance analysis</li>
+        <li>System design</li>
+        <li>Automation</li>
     </ul>
 
 
-    <h3>find me:</h3>
+    <h3>Find me:</h3>
     <ul>
-        <li>github: <a target="_blank" href="https://github.com/markski1">@markski1</a></li>
-        <li>telegram: <a target="_blank" href="https://telegram.me/markski">@markski</a></li>
-        <li>xitter: <a target="_blank" href="https://x.com/a_markski">@a_markski</a></li>
-        <li>discord: <a href="discord://markski.ar">@markski.ar</a></li>
-        <li>email: <a href="mailto:me@markski.ar">me@markski.ar</a>
+        <li>Github: <a target="_blank" href="https://github.com/markski1">@markski1</a></li>
+        <li>Telegram: <a target="_blank" href="https://telegram.me/markski">@markski</a></li>
+        <li>X: <a target="_blank" href="https://x.com/a_markski">@a_markski</a></li>
+        <li>Discord: <a href="discord://markski.ar">@markski.ar</a></li>
+        <li>Email: <a href="mailto:me@markski.ar">me@markski.ar</a>
     </ul>
 
     

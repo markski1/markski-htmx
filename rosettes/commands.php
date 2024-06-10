@@ -8,48 +8,48 @@ $content = /** @lang HTML */
     <<<HTML
 
 
-    <h3>rosettes commands</h3>
+    <h3>Rosettes commands</h3>
     <hr>
-    <p>the following is a somewhat-complete list of commands.</p>
+    <p>The following is a somewhat-complete list of commands.</p>
     <div style="border-left: 2px #666666 solid; padding: .5rem; margin-bottom: 3rem">
-        <h3>utility commands</h3>
+        <h3>Utility commands</h3>
         
         <div>
             <h4>/getvideo <small>[media url]</small></h4>
-            <p>download the video of the given link. [twitter, instagram, tiktok, youtube, etc]</p>
+            <p>Download the video of the given link. [twitter, instagram, tiktok, youtube, etc]</p>
         </div>
         <div>
             <h4>/alarm <small>[amount] [optional:time unit]</small></h4>
-            <p>sets an alarm.</p>
+            <p>Sets an alarm.</p>
         </div>
         <div>
             <h4>/exportemoji</h4>
-            <p>download all custom server emoji in a .zip file.</p>
+            <p>Download all custom server emoji in a .zip file.</p>
         </div>
         <div>
             <h4>/makepoll</h4>
-            <p>allows you to create a custom poll with up to 4 choices.</p>
+            <p>Allows you to create a custom poll with up to 4 choices.</p>
         </div>
     </div>
     
     <div style="border-left: 2px #666666 solid; padding: .5rem; margin-bottom: 3rem">
-        <h3>image commands</h3>
+        <h3>Image commands</h3>
         
         <div>
             <h4>/image saucenao <small>[artwork url]</small></h4>
-            <p>finds the source of a provided artwork.</p>
+            <p>Finds the source of a provided artwork.</p>
         </div>
         <div>
             <h4>/image content <small>[image url]</small></h4>
-            <p>convert image to a format of your choice.</p>
+            <p>Convert image to a format of your choice.</p>
         </div>
         <div>
             <h4>/image reversegif [image url]</h4>
-            <p>reverse the given gif image.</p>
+            <p>Reverse the given gif image.</p>
         </div>
         <div>
             <h4>/image throwbrick [emoji/username/url] [optional:reversed]</h4>
-            <p>creates a gif of the "throw brick" meme with the given image as it's subject.</p>
+            <p>Creates a gif of the "throw brick" meme with the given image as it's subject.</p>
         </div>
     </div>
     
@@ -58,27 +58,27 @@ $content = /** @lang HTML */
         
         <div>
             <h4>/find wiki <small>[term]</small></h4>
-            <p>finds something in wikipedia.</p>
+            <p>Finds something in wikipedia.</p>
         </div>
         <div>
             <h4>/find urban <small>[term]</small></h4>
-            <p>finds something in urban dictionary.</p>
+            <p>Finds something in urban dictionary.</p>
         </div>
         <div>
             <h4>/find pokemon <small>[name or id]</small></h4>
-            <p>finds information about a pokemon.</p>
+            <p>Finds information about a pokemon.</p>
         </div>
         <div>
             <h4>/find anime <small>[term]</small></h4>
-            <p>finds information about an anime.</p>
+            <p>Finds information about an anime.</p>
         </div>
         <div>
             <h4>/find manga <small>[term]</small></h4>
-            <p>finds information about a manga.</p>
+            <p>Finds information about a manga.</p>
         </div>
         <div>
             <h4>/find character <small>[term]</small></h4>
-            <p>finds information about a character from animated media.</p>
+            <p>Finds information about a character from animated media.</p>
         </div>
     </div>
     
@@ -87,11 +87,11 @@ $content = /** @lang HTML */
         
         <div>
             <h4>/dice <small>[faces] [optional:amount]</small></h4>
-            <p>rolls a specified amount of dice with a specified amount of faces each.</p>
+            <p>Rolls a specified amount of dice with a specified amount of faces each.</p>
         </div>
         <div>
             <h4>/coin</h4>
-            <p>throws a coin. can provide optional name for each face.</p>
+            <p>Throws a coin. can provide optional name for each face.</p>
         </div>
     </div>
     
@@ -100,23 +100,23 @@ $content = /** @lang HTML */
         
         <div>
             <h4>/status website <small>[url]</small></h4>
-            <p>check if a website is working.</p>
+            <p>Check if a website is working.</p>
         </div>
         <div>
             <h4>/status ping <small>[hostname or ip address]</small></h4>
-            <p>attempts to ping the provided address.</p>
+            <p>Attempts to ping the provided address.</p>
         </div>
         <div>
             <h4>/status minecraft <small>[hostname or ip address]</small></h4>
-            <p>checks the status of a minecraft server and fetches information.</p>
+            <p>Checks the status of a minecraft server and fetches information.</p>
         </div>
         <div>
             <h4>/status csgo</h4>
-            <p>status of csgo matchmaking servers.</p>
+            <p>Status of csgo matchmaking servers.</p>
         </div>
         <div>
             <h4>/status ffxiv [optional:datacenter]</h4>
-            <p>status of ffxiv servers.</p>
+            <p>Status of ffxiv servers.</p>
         </div>
     </div>
     
@@ -125,27 +125,27 @@ $content = /** @lang HTML */
         
         <div>
             <h4>/farm view</h4>
-            <p>view your farm's status.</p>
+            <p>View your farm's status.</p>
         </div>
         <div>
             <h4>/farm inventory</h4>
-            <p>see your inventory.</p>
+            <p>See your inventory.</p>
         </div>
         <div>
             <h4>/farm fish</h4>
-            <p>attempt to catch a fish.</p>
+            <p>Attempt to catch a fish.</p>
         </div>
         <div>
             <h4>/farm give [item] [amount] [user]</h4>
-            <p>give items to another user.</p>
+            <p>Give items to another user.</p>
         </div>
         <div>
             <h4>/pet view</h4>
-            <p>view your current pet.</p>
+            <p>View your current pet.</p>
         </div>
         <div>
             <h4>/pet list</h4>
-            <p>list all your pets.</p>
+            <p>List all your pets.</p>
         </div>
     </div>
     
@@ -154,19 +154,19 @@ $content = /** @lang HTML */
         
         <div>
             <h4>/serverinfo</h4>
-            <p>information about the current discord server.</p>
+            <p>Information about the current discord server.</p>
         </div>
         <div>
             <h4>/profile [optional:user]</h4>
-            <p>shows information about yourself or the provided user.</p>
+            <p>Shows information about yourself or the provided user.</p>
         </div>
         <div>
             <h4>/eval [expression]</h4>
-            <p>evaluates the given matematical expression.</p>
+            <p>Evaluates the given matematical expression.</p>
         </div>
         <div>
             <h4>/makesweeper [emoji] [optional:difficulty]</h4>
-            <p>create a minesweeper where the mines are the given emoji.</p>
+            <p>Create a minesweeper where the mines are the given emoji.</p>
         </div>
     </div>
     
@@ -175,27 +175,27 @@ $content = /** @lang HTML */
         
         <div>
             <h4>/settings</h4>
-            <p>change the bot's behaviour.</p>
+            <p>Change the bot's behaviour.</p>
         </div>
         <div>
             <h4>/setlogchan [optional:disable]</h4>
-            <p>start showing join and leave messages in the channel where it's used.</p>
+            <p>Start showing join and leave messages in the channel where it's used.</p>
         </div>
         <div>
             <h4>/setfarmchan</h4>
-            <p>restrict minigame commands to the channel where it's used.</p>
+            <p>Restrict minigame commands to the channel where it's used.</p>
         </div>
         <div>
             <h4>/feedback <small>[text]</small></h4>
-            <p>send feedback to the bot's developer.</p>
+            <p>Send feedback to the bot's developer.</p>
         </div>
         <div>
             <h4>/about</h4>
-            <p>bot's current status.</p>
+            <p>Bot's current status.</p>
         </div>
     </div>
     <div>
-        <p>this list isn't always up to date. more functionality is available through the admin panel.</p>
+        <p>This list isn't always up to date. More functionality is available through the admin panel.</p>
     </div>
 
     

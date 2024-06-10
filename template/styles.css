@@ -40,6 +40,7 @@ code, pre {
 }
 
 h3, h4 {
+    font-weight: 400;
     margin-top: 2rem;
 }
 
@@ -145,4 +146,37 @@ li {
 }
 .htmx-request.opacity-trans{
     opacity:0.1
+}
+
+
+/* Desktop */
+
+
+@media (min-width: 900px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 9.5rem auto;
+    }
+
+    .layout-menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 130px;
+        border-right: 1px #404040 solid;
+    }
+
+    .layout-content {
+        justify-self: left;
+        justify-content: left;
+        margin: 0;
+        margin-top: -1.33rem;
+    }
+
+    .menubtn {
+        margin: .5rem 0;
+        width: 110px;
+    }
+
 }

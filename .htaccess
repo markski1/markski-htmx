@@ -5,13 +5,15 @@
   # Remove .php extension
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}\.php -f
-  RewriteRule ^(.*)$ $1.php [L]
+  RewriteRule ^([^/]+)$ $1.php [L]
 
   # Rewrite /blog/<something> to view_blog.php?id=<something>
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^blog/([^/]+)/?$ view_blog.php?id=$1 [QSA,L]
 
   # Redirect requests to 404.php if the file doesn't exist
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ 404.php [QSA,L]
+  RewriteRule ^.*$ 404.php [QSA,L]
 </IfModule>

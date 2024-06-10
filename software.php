@@ -5,37 +5,37 @@ $content = /** @lang HTML */
     <<<HTML
 
     
-    <h3>software & stuff</h3>
+    <h3>Software & stuff</h3>
     <hr>
     <div>
         <h4>Rosettes</h4>
-        simple, free, open source discord bot.<br />
-        <sitelink to="rosettes">learn more</sitelink> - <a href="https://github.com/markski1/RosettesDiscord" target="_blank">github</a>
+        Simple, free, open source discord bot.<br />
+        <sitelink to="rosettes">Learn more</sitelink> - <a href="https://github.com/markski1/RosettesDiscord" target="_blank">GitHub</a>
     </div>
     <div>
         <h4>SAMonitor</h4>
-        server monitoring for sa-mp and openmultiplayer.<br />
-        <sitelink to="samonitor">learn more</sitelink> - <a href="https://github.com/markski1/SAMonitor" target="_blank">github</a>
+        Server monitoring for SA-MP and openmultiplayer.<br />
+        <sitelink to="samonitor">Learn more</sitelink> - <a href="https://github.com/markski1/SAMonitor" target="_blank">GitHub</a>
     </div>
     <div>
         <h4>writar</h4>
-        free and hassle-free document sharing.<br />
-        <sitelink to="writar">learn more</sitelink> - <a href="https://github.com/markski1/writar" target="_blank">github</a>
+        Free and hassle-free document sharing.<br />
+        <sitelink to="writar">Learn more</sitelink> - <a href="https://github.com/markski1/writar" target="_blank">GitHub</a>
     </div>
     <div>
         <h4>WTTk</h4>
-        enables tweaking hidden windows settings.<br />
-        <sitelink to="wttk">learn more</sitelink> - <a href="https://github.com/markski1/WinTweakTool" target="_blank">github</a>
+        Enables tweaking hidden windows settings.<br />
+        <sitelink to="wttk">Learn more</sitelink> - <a href="https://github.com/markski1/WinTweakTool" target="_blank">GitHub</a>
     </div>
     <div>
         <h4>BSXU</h4>
-        custom uploader for self-hosting files. sharex compatible. backs up files up to Backblaze B2<br>
-        <sitelink to="blog/bsxu-b2-hosting" target="_blank">view POST</a> - <a href="https://github.com/markski1/BSXU" target="_blank">view on github</sitelink>
+        Custom uploader for self-hosting files. Sharex compatible. Backs up files up to Backblaze B2<br>
+        <sitelink to="blog/bsxu-b2-hosting" target="_blank">View post</a> - <a href="https://github.com/markski1/BSXU" target="_blank">GitHub</sitelink>
     </div>
     <div>
         <h4>Calculando Argentina</h4>
-        web app with calculators relevant to argentina.<br />
-        <sitelink to="calculando">learn more</sitelink> - <a href="https://github.com/markski1/Calculadoras" target="_blank">github</a>
+        Web app with calculators relevant to argentina.<br />
+        <sitelink to="calculando">Learn more</sitelink> - <a href="https://github.com/markski1/Calculadoras" target="_blank">GitHub</a>
     </div>
     
     <iframe src="https://status.markski.ar/badge?theme=dark" style="border: 0; width: 250px; height: 32px; margin-top: 2rem;"></iframe>
@@ -43,6 +43,6 @@ $content = /** @lang HTML */
     
 HTML;
 
-$site = new Template("software & stuff");
-$site->set_description("software and stuff made by me.");
+$site = new Template("Software & stuff");
+$site->set_description("Software and stuff made by me.");
 $site->render($content);
