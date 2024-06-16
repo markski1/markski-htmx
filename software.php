@@ -30,7 +30,7 @@ $content = /** @lang HTML */
     <div>
         <h4>BSXU</h4>
         Custom uploader for self-hosting files. Sharex compatible. Backs up files up to Backblaze B2<br>
-        <sitelink to="blog/bsxu-b2-hosting" target="_blank">View post</a> - <a href="https://github.com/markski1/BSXU" target="_blank">GitHub</sitelink>
+        <sitelink to="blog/bsxu-b2-hosting" target="_blank">View post</sitelink> - <a href="https://github.com/markski1/BSXU" target="_blank">GitHub</a>
     </div>
     <div>
         <h4>Calculando Argentina</h4>
