@@ -28,7 +28,7 @@ $content = /** @lang HTML */
                     Add to server
                 </button>
             </a>
-            <a class="no-decor" href="/rosettes/panel">
+            <a class="no-decor" href="https://rosettes.markski.ar">
                 <button class="menubtn brighter">
                     Admin panel
                 </button>
