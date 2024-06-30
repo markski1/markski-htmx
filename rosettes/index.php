@@ -57,7 +57,7 @@ $content = /** @lang HTML */
             </li>
             <li>
                 <b>Image functions</b>
-                <br>SauceNAO to find artwork sources, GIF reversing, converting image formats, etc.
+                <br>SauceNAO to find artwork sources.
             </li>
             <li>
                 <b>Downloading Twitter videos</b>

@@ -39,18 +39,6 @@ $content = /** @lang HTML */
             <h4>/image saucenao <small>[artwork url]</small></h4>
             <p>Finds the source of a provided artwork.</p>
         </div>
-        <div>
-            <h4>/image content <small>[image url]</small></h4>
-            <p>Convert image to a format of your choice.</p>
-        </div>
-        <div>
-            <h4>/image reversegif [image url]</h4>
-            <p>Reverse the given gif image.</p>
-        </div>
-        <div>
-            <h4>/image throwbrick [emoji/username/url] [optional:reversed]</h4>
-            <p>Creates a gif of the "throw brick" meme with the given image as it's subject.</p>
-        </div>
     </div>
     
     <div style="border-left: 2px #666666 solid; padding: .5rem; margin-bottom: 3rem">
