@@ -1,8 +1,8 @@
 <?php
 include '../template/engine.php';
 
-$site = new Template("rosettes");
-$site->set_description("rosettes is a simple, free and open source discord bot.");
+$site = new Template("Rosettes");
+$site->set_description("Rosettes is a simple, free and open source Discord bot.");
 
 $content = /** @lang HTML */
     <<<HTML

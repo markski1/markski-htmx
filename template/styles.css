@@ -14,6 +14,10 @@ body {
     font-family: 'IBM Plex Mono', monospace;
 }
 
+p {
+    font-size: 0.9rem;
+}
+
 header {
     margin: auto;
     top: 0;
@@ -39,8 +43,12 @@ code, pre {
     background: #000000;
 }
 
-h3, h4 {
+h3 {
     font-weight: 400;
+    margin-top: 2rem;
+}
+
+h4 {
     margin-top: 2rem;
 }
 

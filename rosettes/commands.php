@@ -1,8 +1,8 @@
 <?php
 include '../template/engine.php';
 
-$site = new Template("rosettes commands");
-$site->set_description("commands for the Rosettes discord bot.");
+$site = new Template("Rosettes Commands");
+$site->set_description("Commands for the Rosettes Discord bot.");
 
 $content = /** @lang HTML */
     <<<HTML
