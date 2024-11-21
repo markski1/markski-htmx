@@ -60,8 +60,8 @@ $content = /** @lang HTML */
                 <br>SauceNAO to find artwork sources.
             </li>
             <li>
-                <b>Downloading Twitter videos</b>
-                <br>Uploads a video file from any tweet you give it.
+                <b>Downloading videos</b>
+                <br>Can download videos from Twitter, TikTok, Streamable, and others.
             </li>
             <li>
                 <b>Polls</b>
@@ -79,10 +79,6 @@ $content = /** @lang HTML */
                 <b>Minigames</b>
                 <br>- Farming and fishing system, with shop, inventory and the expected stuff.
                 <br>- A pet ownership and interaction system.
-            </li>
-            <li>
-                <b>Custom commands</b>
-                <br>Add your own guild commands to let users see information and manage roles.
             </li>
             <li>
                 <b>Miscelaneous</b>

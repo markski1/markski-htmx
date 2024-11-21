@@ -16,7 +16,7 @@ $content = /** @lang HTML */
         
         <div>
             <h4>/getvideo <small>[media url]</small></h4>
-            <p>Download the video of the given link. [twitter, instagram, tiktok, youtube, etc]</p>
+            <p>Download the video of the given link. [twitter, tiktok, etc]</p>
         </div>
         <div>
             <h4>/alarm <small>[amount] [optional:time unit]</small></h4>
@@ -147,10 +147,6 @@ $content = /** @lang HTML */
         <div>
             <h4>/profile [optional:user]</h4>
             <p>Shows information about yourself or the provided user.</p>
-        </div>
-        <div>
-            <h4>/eval [expression]</h4>
-            <p>Evaluates the given matematical expression.</p>
         </div>
         <div>
             <h4>/makesweeper [emoji] [optional:difficulty]</h4>
