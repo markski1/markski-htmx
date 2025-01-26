@@ -9,8 +9,7 @@ $content = <<<HTML
 
     <h3>About</h3>
     <hr>
-    <p>I am a computer science student from La Plata, Argentina.</br>
-    Fullstack developer as a hobby, backend developer for a living.</p>
+    <p>Software developer from La Plata, Argentina. CompSci student.</p>
     <small>Latest blog post: <sitelink to="blog/bsxu-b2-hosting">Self-hosting with BSXU</sitelink></small>
     <h3>Domains I work within:</h3>
     <ul>

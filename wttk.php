@@ -21,7 +21,6 @@ $content = /** @lang HTML */
         </ul>
         <img src="/images/wttk.png" alt="screenshot of the application" width="500">
         <p><a href="https://github.com/markski1/WinTweakTool/releases/latest" target="_blank">Download latest version</a> - <a href="https://github.com/markski1/WinTweakTool" target="_blank">View on GitHub</a></p>
-        <p>Support development with a <sitelink to="donate">Donation</sitelink></p>
     </div>
 
     

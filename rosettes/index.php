@@ -36,9 +36,6 @@ $content = /** @lang HTML */
             <button class="menubtn brighter" hx-get="/rosettes/commands.php" hx-target="#main-content" hx-push-url="true">
                 Command list
             </button>
-            <button class="menubtn brighter" hx-get="/donate" hx-target="#main-content" hx-push-url="true">
-                Donate
-            </button>
             <a class="no-decor" href="https://github.com/markski1/RosettesDiscord" target="_blank">
                 <button class="menubtn brighter">
                     GitHub
@@ -95,7 +92,6 @@ $content = /** @lang HTML */
             </li>
         </ul>
         <p>For a list of commands, <sitelink to="rosettes/commands">click here</sitelink>.</p>
-        <p>To support hosting and development, <sitelink to="donate">click here</sitelink>.</p>
     </div>
 
     
