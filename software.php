@@ -37,6 +37,11 @@ $content = /** @lang HTML */
         Web app with calculators relevant to argentina.<br />
         <sitelink to="calculando">Learn more</sitelink> - <a href="https://github.com/markski1/Calculadoras" target="_blank">GitHub</a>
     </div>
+    <div>
+        <h4>PSXU [unmaintained, consider BSXU]</h4>
+        Simple program to easily upload and share images using your PHP web server, through ShareX.<br>
+        <a href="https://github.com/markski1/PSXU" target="_blank">View on GitHub</a>
+    </div>
     
     <iframe src="https://status.markski.ar/badge?theme=dark" style="border: 0; width: 250px; height: 32px; margin-top: 2rem;"></iframe>
     

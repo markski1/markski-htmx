@@ -11,7 +11,7 @@ $content = <<<HTML
     <hr>
     <p>Software developer from La Plata, Argentina. CompSci student.</p>
     <small>Latest blog post: <sitelink to="blog/bsxu-b2-hosting">Self-hosting with BSXU</sitelink></small>
-    <h3>Domains I work within:</h3>
+    <h3>Areas of work:</h3>
     <ul>
         <li>Backend development</li>
         <li>Server administration</li>
@@ -26,7 +26,6 @@ $content = <<<HTML
     <ul>
         <li>Github: <a target="_blank" href="https://github.com/markski1">@markski1</a></li>
         <li>Telegram: <a target="_blank" href="https://telegram.me/markski">@markski</a></li>
-        <li>X: <a target="_blank" href="https://x.com/a_markski">@a_markski</a></li>
         <li>Discord: <a href="discord://markski.ar">@markski.ar</a></li>
         <li>Email: <a href="mailto:me@markski.ar">me@markski.ar</a>
     </ul>
