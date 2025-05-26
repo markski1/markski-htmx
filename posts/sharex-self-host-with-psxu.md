@@ -29,7 +29,7 @@ After you've finished this guide, you will be able to quickly upload files to yo
 
 
 ### Downloading and configuring PSXU
-First, you will need to pick up PSXU from it's [Github releases page](https://github.com/markski1/PSXU/releases/latest). Simply download the Source code in ZIP form, and uncompress it in a folder.
+First, you will need to pick up PSXU from its [Github releases page](https://github.com/markski1/PSXU/releases/latest). Simply download the Source code in ZIP form, and uncompress it in a folder.
 
 Once done, you will find yourself with three files.
 
@@ -87,4 +87,4 @@ Congratulations, you're now hosting your own file sharing. You can upload just a
 
 Don't forget that with self-hosting comes responsabilities. Namely, you'll have to worry about doing your own back ups if you care about not losing the files you host.
 
-And keep in mind that while I made PSXU with the idea of using it with ShareX, it's functionality is fairly generic. Any software that supports custom upload destinations will probably work all the same.
+And keep in mind that while I made PSXU with the idea of using it with ShareX, its functionality is fairly generic. Any software that supports custom upload destinations will probably work all the same.

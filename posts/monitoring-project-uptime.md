@@ -12,7 +12,7 @@ It's a form of freedom! And as such, a responsability. When you're running your 
 This has taught me a few things:
 
 - No matter how well-written, software -will- crash if enough stars align.
-- Even if your software itself doesn't crash on it's own, something else can (and will) take it out.
+- Even if your software itself doesn't crash on its own, something else can (and will) take it out.
 - Your users, especially non-technical users, will not always tell you when your stuff stops working, they'll just shrug and assume "it'll probably work later".
 - Running your software as system services is a neat way to ensure quick restarts, but sometimes you'll reach a state where even that won't work.
 

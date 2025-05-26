@@ -29,7 +29,7 @@ First, if you want to use B2, create a bucket in Backblaze. Name it whatever you
 
 Then head to "applications" in the sidebar, and create a new application key. Take note of it's ID and token key.
 
-Now grab BSXU from it's [Github releases page](https://github.com/markski1/BSXU/releases/latest). Simply download the Source code in ZIP form, and uncompress it in a folder.
+Now grab BSXU from its [Github releases page](https://github.com/markski1/BSXU/releases/latest). Simply download the Source code in ZIP form, and uncompress it in a folder.
 
 Once done, copy the `.env.example` file, and call the new copy `.env`. This will hold the enviroment variables, the "configuration" if you will.
 

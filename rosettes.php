@@ -1,5 +1,5 @@
 <?php
-include '../template/engine.php';
+include 'template/engine.php';
 
 $site = new Template("Rosettes");
 $site->set_description("Rosettes is a simple, free and open source Discord bot.");
@@ -14,10 +14,10 @@ $content = /** @lang HTML */
         <h4>About</h4>
         <img alt="rosettes logo" src="/images/rosettes.png" width="20%" style="float: right"/>
         <p>Rosettes is a simple, free and open source discord bot.</p>
-        <p>It's objectives are:</p>
+        <p>Its objectives are:</p>
         <ul>
             <li>To be simple to set up.</li>
-            <li>To be as straightforwards as possible in all it's functions.</li>
+            <li>To be as straightforwards as possible in all its functions.</li>
             <li>To collect as little user and guild data as possible.</li>
             <li>To collect absolutely no message data, ever.</li>
         </ul>
@@ -33,9 +33,6 @@ $content = /** @lang HTML */
                     Admin panel
                 </button>
             </a>
-            <button class="menubtn brighter" hx-get="/rosettes/commands.php" hx-target="#main-content" hx-push-url="true">
-                Command list
-            </button>
             <a class="no-decor" href="https://github.com/markski1/RosettesDiscord" target="_blank">
                 <button class="menubtn brighter">
                     GitHub
@@ -49,41 +46,44 @@ $content = /** @lang HTML */
         <p>You may toggle functionality at a whim with <span class="accent">/settings</span>.</p>
         <ul>
             <li>
+                <b>Downloading videos</b>
+                <br>Can download videos from Twitter, TikTok, Streamable, and others with <span class="accent">/getvideo</span>.
+            </li>
+            <li>
+                <b>Searching</b>
+                <br>Quickly get information from Wikipedia, UrbanDictionary, Pokepedia, Anime/Manga sites, etc. with <span class="accent">/find</span>.
+            </li>
+            <li>
                 <b>Role management</b>
                 <br>Create AutoRoles for users to automatically assign themselves roles.
             </li>
             <li>
-                <b>Image functions</b>
-                <br>SauceNAO to find artwork sources.
+                <b>Chatting</b>
+                <br>Rosettes can answer to questions and keep basic conversations with <span class="accent">/ask</span>.
             </li>
             <li>
-                <b>Downloading videos</b>
-                <br>Can download videos from Twitter, TikTok, Streamable, and others.
+                <b>Image functions</b>
+                <br>SauceNAO to find artwork sources with the <span class="accent">/image saucenao</span> command.
             </li>
             <li>
                 <b>Polls</b>
-                <br>Easily create polls where people can anonymously vote.
+                <br>Easily create polls where people can anonymously vote with <span class="accent">/makepoll</span>.
             </li>
             <li>
                 <b>Reminders</b>
-                <br>Let users set reminder alarms for themselves, even in DM's.
-            </li>
-            <li>
-                <b>Searching</b>
-                <br>Quickly get information from Wikipedia, UrbanDictionary, Pokepedia, Anime/Manga sites, etc.
+                <br>Let users set reminder alarms for themselves, even in DMs, with <span class="accent">/alarm</span>.
             </li>
             <li>
                 <b>Minigames</b>
-                <br>- Farming and fishing system, with shop, inventory and the expected stuff.
-                <br>- A pet ownership and interaction system.
+                <br>- Farming and fishing system, with shop, inventory and the expected stuff with <span class="accent">/farm</span>
+                <br>- A pet ownership and interaction system with <span class="accent">/pet</span>
             </li>
             <li>
                 <b>Miscelaneous</b>
                 <br>- Display who joins and leaves the server
-                <br>- Provide status information for certain games
-                <br>- Throwing dice and coins
-                <br>- Expression evaluator
-                <br>- Even more.
+                <br>- Provide status information for certain games with <span class="accent">/status</span>
+                <br>- Luck: You can <span class="accent">/roll</span> dice and throw <span class="accent">/coin</span>s
+                <br>- More stuff.
             </li>
             <li>
                 <b>What else would you like?</b>
@@ -91,7 +91,6 @@ $content = /** @lang HTML */
                 <br>I am always adding new things, and welcoming new ideas.
             </li>
         </ul>
-        <p>For a list of commands, <sitelink to="rosettes/commands">click here</sitelink>.</p>
     </div>
 
     

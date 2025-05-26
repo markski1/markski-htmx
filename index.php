@@ -9,8 +9,9 @@ $content = <<<HTML
 
     <h3>About</h3>
     <hr>
-    <p>Software developer from La Plata, Argentina. CompSci student.</p>
+    <p>Computer science, software development.</p>
     <small>Latest blog post: <sitelink to="blog/bsxu-b2-hosting">Self-hosting with BSXU</sitelink></small>
+    
     <h3>Areas of work:</h3>
     <ul>
         <li>Backend development</li>
@@ -20,7 +21,6 @@ $content = <<<HTML
         <li>System design</li>
         <li>Automation</li>
     </ul>
-
 
     <h3>Find me:</h3>
     <ul>
