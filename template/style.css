@@ -18,14 +18,10 @@ p {
     font-size: 0.9rem;
 }
 
-header {
-    margin: auto;
-    top: 0;
-}
-
 main {
     max-width: 950px;
     margin-bottom: 70px;
+    margin-top: 50px;
 }
 
 hr {

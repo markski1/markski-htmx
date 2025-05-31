@@ -12,21 +12,18 @@ $content = <<<HTML
     <p>Computer science, software development.</p>
     <small>Latest blog post: <sitelink to="blog/bsxu-b2-hosting">Self-hosting with BSXU</sitelink></small>
     
-    <h3>Areas of work:</h3>
+    <h4>Work:</h4>
     <ul>
         <li>Backend development</li>
-        <li>Server administration</li>
         <li>Database administration</li>
         <li>Performance analysis</li>
-        <li>System design</li>
-        <li>Automation</li>
+        <li>Systems design</li>
     </ul>
 
-    <h3>Find me:</h3>
+    <h4>Talk:</h4>
     <ul>
         <li>Github: <a target="_blank" href="https://github.com/markski1">@markski1</a></li>
         <li>Telegram: <a target="_blank" href="https://telegram.me/markski">@markski</a></li>
-        <li>Discord: <a href="discord://markski.ar">@markski.ar</a></li>
         <li>Email: <a href="mailto:me@markski.ar">me@markski.ar</a>
     </ul>
 
