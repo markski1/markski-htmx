@@ -10,7 +10,7 @@ $content = <<<HTML
     <h3>About</h3>
     <hr>
     <p>Computer science, software development.</p>
-    <small>Latest blog post: <sitelink to="blog/bsxu-b2-hosting">Self-hosting with BSXU</sitelink></small>
+    <small>Latest blog post: <sitelink to="blog/blame-vs-accountability">Who's to blame and when does it matter</sitelink></small>
     
     <h4>Work:</h4>
     <ul>

@@ -10,6 +10,11 @@ $content = <<<HTML
     <h3>Blog</h3>
     <hr>
     <div>
+        <h3>Who's to blame and when does it matter</h3>
+        <p>Up to what point is someone else's fault really someone else's fault?</p>
+        <p><sitelink to="blog/blame-vs-accountability">View post</sitelink></p>
+    </div>
+    <div>
         <h3>Self-hosting with BSXU</h3>
         <p>Leverage sharex, backblaze b2 and your webserver to hold and serve your own files easily.</p>
         <p><sitelink to="blog/bsxu-b2-hosting">View post</sitelink></p>
