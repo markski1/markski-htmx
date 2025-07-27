@@ -24,21 +24,25 @@ Nowadays, this is probably either Amazon, Google or Microsoft. None of the above
 
 ### Mitigations
 
-Working from the bottom up, there's a bit of a logical order of things to follow, a little more extreme and less reasonable as you work your way up.
+There's a bit of a logical order of things to follow.
 
-***Multiple instances***: While I am violently opposed to the general microservices and "serverless" trend and terminology, the foundation of them is good. Your applications should ideally be able to "live" in multiple places at once, load balanced. Or, at the very least, have some sort of watchdog, capable of detecting failures or downtime and "respawn" them elsewhere.
+#### Multiple instances
+I tend to oppose the general microservices and "serverless" trend and terminology, but some of the base bulletpoints around this is fairly solid: Your applications should ideally be able to "live" in multiple places at once, load balanced. Or, at the very least, have some sort of watchdog, capable of detecting failures or downtime and "respawn" them elsewhere.
 
-***Multiple regions***: When a cloud provider fails, it's usually at "availability zone" level. Different providers use different names for this, but basically when located within a region you should have your services spread across separate AZ's. It is not unheard of, however, for an entire region to outright fail. Not to mention the potential for regional catastrophes, acts of god or infrastructural failure (ie. prolonged loss of power) to happen.
+#### Multiple regions
+Cloud providers usually fail at "availability zone" level. Different providers use different names for this. Within a region you should have your services spread across separate AZ's. A 'region' as a whole can fail, though, for technical or physical reasons: Regional catastrophes, acts of god, infrastructural failure (ie. prolonged loss of power).
 
-It is not unreasonable then, that you should be able to serve from different places in the world. There is a joke that if Amazon's "us-east-1" were to disappear, so would a significant chunk of the economy. This is funny. However, if this is true for your organization, perhaps try and plan around it.
+It would help, then, to be able to serve from different places in the world. There is a joke that if Amazon's "us-east-1" disappears, so does quite a bit of the world. This is funny. However, if this is true for your organization, perhaps try and plan around it.
 
-To do this "properly" by actively serving off separate regions in an efficient manner can be hard. I could go into a whole tangent about the awfully-often-ignored consecuences of separating data from compute, but I'll just limit myself to saying that you should at the very least be able to failover to other regions without requiring all hands on deck.
+To properly serve off separate regions in an efficient manner can be hard. One could go into a whole tangent about the often-ignored consecuences of separating data and compute, and to keep data up to date in many places at once is a science of its own, but at the very least: You should be able to failover to other regions without requiring all hands on deck.
 
-***Multiple providers***: Quite self explanatory, and also quite extreme. To failover or actively serve off separate providers is probably the ultimate show of resilience, and perhaps the closest to 100% uptime you can go short short of your own services' shortcomings.
+#### Multiple providers: 
 
-Though the practical problems from this are cruel: Inter-cloud networking will usually not be as fast as within a region or cloud. To set up private tunnels between them can be a bit of a devops nightmare, not to mention setting up VPNs like Twingate and the cost of managing all of that... And let's not even touch the touchy subject of cost of inter-cloud bandwidth!
+Quite extreme, but possibly what should be "the goal": To have multiple vendors makes the possibility of suffering downtime because of a vendor a borderline non-factor.
 
-The multiple providers rule can be applied a bit wider than just compute providers: If you use a third party service of transactional mails, what happens if the one you use fails? Would it be reasonable to have two such providers and an internal failover layer for mailing? How about payment gateways? Auth providers? (Though I strongly believe that if you don't roll your own auth you kinda deserve everything that comes with such laziness...)
+The practical problems from this are cruel, though: Inter-cloud networking will be slower than within a cloud, almost always. To set up private tunnels between them can be a bit of a devops nightmare. To manage all of this at once can be a nightmare of it's own. And the cost of inter-cloud bandwidth can be a straight up deal breaker for most smaller orgs, not to mention the cost of the infra itself.
+
+However, the "multiple providers" rule can be applied wider than just compute providers: If you use a third party service for, say, transactional emails, what happens if the one you use fails? Would it be reasonable to have two such providers and an internal failover layer for mailing? How about payment gateways? LLM completions?
 
 Either way...
 
@@ -47,5 +51,7 @@ Either way...
 The name of the game is *the magic of having two of them*. Or more. The entire point around this post is that to rely on a single vendor for anything means that you limit yourself to the competence of the vendor.
 
 When problems arise once or twice a blue moon it can be acceptable to blame the vendor. They should uphold their SLA after all. But your customers will not care, especially when a issue becomes recurrent.
+
+If your budget is thin and your service reflects this, a little bit of downtime -can- be the acceptable trade-off. To comply with everything above can make the cost of operating very expensive and it may simply not make sense. But at the end of the day...
 
 You chose the vendor. You should hold yourself accountable if you're not doing enough to work around their shit.
