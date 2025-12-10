@@ -59,7 +59,7 @@ $content = /** @lang HTML */
             </li>
             <li>
                 <b>Chatting</b>
-                <br>Rosettes can answer to questions and keep basic conversations with <span class="accent">/ask</span>.
+                <br>Rosettes can answer questions and keep basic conversations with <span class="accent">/chat</span>.
             </li>
             <li>
                 <b>Image functions</b>

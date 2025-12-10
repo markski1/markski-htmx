@@ -40,6 +40,11 @@ $content = /** @lang HTML */
     <hr>
 
     <div>
+        <h4>BlockLog</h4>
+        In-development Minecraft plugin to log actions and events on the map. Aims to be more lightweight than the current standard options.<br>
+        <a href="https://github.com/markski1/blocklog" target="_blank">View on GitHub</a>
+    </div>
+    <div>
         <h4>ez-steam-api.php</h4>
         Object-oriented php interface for easily and quickly requesting data from the steam api.<br>
         <a href="https://github.com/markski1/ez-steam-api.php" target="_blank">View on GitHub</a>
@@ -66,6 +71,6 @@ $content = /** @lang HTML */
     
 HTML;
 
-$site = new Template("Software & stuff");
-$site->set_description("Software and stuff made by me.");
+$site = new Template("Stuff");
+$site->set_description("Stuff made by me.");
 $site->render($content);
